@@ -1,0 +1,4008 @@
+// Arrays of variables for colors image paths
+$colors: (
+  myWhite: white,
+  mainblue: #006aff,
+  myLightBlue: dodgerblue,
+  textColor: #2a2a33,
+  redCircle: #ff5a50,
+  violetCircle: #985dff,
+  yellowCircle: #ffd237,
+  borderColorC: #ccc,
+);
+// color_function(textColor)
+// Arrays of variables for image paths
+$img_path: (
+  bannerhouse: "../images/bannerhouse.jpg",
+  footerimage: "../images/footer.png",
+);
+
+// fonts
+$open-sans: "Open Sans", sans-serif;
+$new-open-sans: "Roboto", sans-serif;
+// Functions: colors, image paths
+@function color_function($color_name) {
+  @return map-get($colors, $color_name);
+}
+@function img_function($img_name) {
+  @return map-get($img_path, $img_name);
+}
+
+// Mixins
+// Mixin for grid
+@mixin grid($number, $size, $custom, $gap, $row, $values...) {
+  display: grid;
+  gap: $gap;
+  @if ($row) {
+    @if ($custom) {
+      @each $var in $values {
+        grid-template-rows: #{$var};
+      }
+    } @else {
+      grid-template-rows: repeat($number, $size);
+    }
+  } @else {
+    @if ($custom) {
+      @each $var in $values {
+        grid-template-columns: #{$var};
+      }
+    } @else {
+      grid-template-columns: repeat($number, $size);
+    }
+  }
+}
+// Mixin for flex
+@mixin flex($justifyContent, $alignItems, $flexDirection) {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+  flex-direction: $flexDirection;
+}
+// Font mixin
+@mixin font($family, $size, $weight, $style, $color) {
+  color: $color;
+  font: {
+    family: $family;
+    size: $size;
+    weight: $weight;
+    style: $style;
+  }
+}
+// Mixixn for building block
+@mixin boxSize($width, $height, $color, $backgroundColor, $borderRadious...) {
+  width: $width;
+  height: $height;
+  color: $color;
+  @each $var in $borderRadious {
+    border-radius: #{$var};
+  }
+  background-color: $backgroundColor;
+}
+// Mixin for buildig button
+@mixin buttonMaker($color, $background, $borderRadius, $outline, $padding...) {
+  cursor: pointer;
+  color: $color;
+  background: $background;
+  border-radius: $borderRadius;
+  outline: $outline;
+  @each $var in $padding {
+    padding: #{$var};
+  }
+}
+// Styling text for rent or sale
+@mixin rentOrSale($radius) {
+  .houseForSaleCircle {
+    @include boxSize($radius, $radius, null, color_function(redCircle), 50%);
+    display: inline-block;
+    border: color_function(myWhite) 1px solid;
+  }
+  .houseForRentCircle {
+    @include boxSize($radius, $radius, null, color_function(violetCircle), 50%);
+    display: inline-block;
+    border: color_function(myWhite) 1px solid;
+  }
+  .potentialListings {
+    @include boxSize($radius, $radius, null, color_function(mainblue), 50%);
+    display: inline-block;
+    border: color_function(myWhite) 1px solid;
+  }
+  .sold {
+    @include boxSize($radius, $radius, null, color_function(yellowCircle), 50%);
+    display: inline-block;
+    border: color_function(myWhite) 1px solid;
+  }
+}
+@mixin doneButton {
+  @include boxSize(100%, 55px, null, color_function(mainblue), null);
+  @include flex(null, null, null);
+  align-items: center;
+  padding-right: 20px;
+  .done {
+    margin-left: auto;
+    @include boxSize(
+      auto,
+      auto,
+      color_function(mainblue),
+      color_function(myWhite),
+      4px
+    );
+    min-width: 100px;
+    border: none;
+    min-height: 34px;
+    @include font($open-sans, 14px, 600, null, null);
+    cursor: pointer;
+  }
+}
+// Mixin for building custom Radio Button
+@mixin customInputBuiding(
+  $boxWidth,
+  $boxHeight,
+  $labelFontSize,
+  $radious,
+  $topBefore,
+  $leftBefore,
+  $leftAfter,
+  $topAfter,
+  $weight,
+  $labelColor: color_function(textColor),
+  $after: true,
+  $borderColor: rgba(127, 133, 150, 0.5)
+) {
+  label::before {
+    content: "";
+    display: inline-block;
+    @include boxSize($boxWidth, $boxHeight, null, null, $radious);
+    border: $borderColor 1px solid;
+  }
+  label {
+    cursor: pointer;
+    position: relative;
+    @include font($open-sans, $labelFontSize, $weight, null, $labelColor);
+    &:hover {
+      color: color_function(mainblue);
+    }
+  }
+  label::before {
+    position: absolute;
+    cursor: pointer;
+  }
+  /*Outer-box*/
+  label::before {
+    top: $topBefore;
+    left: $leftBefore;
+  }
+  @if $after {
+    label::after {
+      content: "";
+      display: inline-block;
+      @include boxSize(8px, 4px, color_function(myWhite), null, 2px);
+      border-left: 2px solid;
+      border-bottom: 2px solid;
+      transform: rotate(-45deg);
+    }
+    label::after {
+      position: absolute;
+      cursor: pointer;
+    }
+    label::after {
+      left: $leftAfter;
+      top: $topAfter;
+    }
+  }
+}
+@mixin radioCheckBox($lineHeight, $check: true, $textAlign: center) {
+  @if $check {
+    background: color_function(mainblue);
+    border: 1px color_function(mainblue) solid;
+    text-align: $textAlign;
+    line-height: $lineHeight;
+    color: color_function(myWhite);
+  } @else {
+    background: color_function(myWhite);
+    text-align: $textAlign;
+    line-height: $lineHeight;
+  }
+}
+// Custom Select box
+@mixin customSelect(
+  $bottom,
+  $boxWidth: auto,
+  $itemsWidth: auto,
+  $left: 0,
+  $top: 100%
+) {
+  // HOA select box
+  /*the container must be positioned relative:*/
+  .custom-select {
+    position: relative;
+    @include font($open-sans, 15px, 500, null, rgba(0, 0, 0, 0.75));
+  }
+  /*hide original SELECT element:*/
+  .custom-select select {
+    display: none;
+  }
+  // main select box
+  .select-selected {
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    background-color: color_function(myWhite);
+    border: rgba(178, 181, 189, 0.8) 1px solid;
+    padding: 4px 0 4px 5px;
+    width: $boxWidth;
+    position: relative;
+  }
+  // Options container under the select box
+  .select-items div {
+    padding: 1px 0 1px 5px;
+    &:hover {
+      color: color_function(myWhite);
+    }
+  }
+  /*style the arrow inside the select element:*/
+  .select-selected:after {
+    position: absolute;
+    content: "";
+    top: 14px;
+    right: 10px;
+    width: 0;
+    height: 0;
+    border: 4px solid transparent;
+    border-color: rgba(178, 181, 189, 0.6) transparent transparent transparent;
+  }
+
+  /*point the arrow upwards when the select box is open (active):*/
+  .select-selected.select-arrow-active:after {
+    border-color: transparent transparent rgba(178, 181, 189, 0.6) transparent;
+    top: 7px;
+  }
+
+  /*style the items (options), including the selected item:*/
+  .select-items div,
+  .select-selected {
+    color: black;
+    cursor: pointer;
+    user-select: none;
+  }
+  /*style items (options):*/
+  .select-items {
+    width: $itemsWidth;
+    max-height: 320px;
+    overflow-y: auto;
+    background-color: color_function(myWhite);
+    border: rgba(178, 181, 189, 0.8) 1px solid;
+    position: absolute;
+    top: $top;
+    left: $left;
+    bottom: $bottom;
+    right: 0;
+    z-index: 100;
+  }
+
+  /*hide the items when the select box is closed:*/
+  .select-hide {
+    display: none;
+  }
+
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: color_function(myLightBlue);
+  }
+}
+// Media query mixins
+@mixin for-phone-only {
+  @media (max-width: 600px) {
+    @content;
+  }
+}
+@mixin for-tablet-portrait-up {
+  @media (max-width: 900px) {
+    @content;
+  }
+}
+@mixin for-tablet-landscape-up {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+@mixin for-desktop-up {
+  @media (max-width: 1500px) {
+    @content;
+  }
+}
+@mixin for-big-desktop-up {
+  @media (max-width: 1800px) {
+    @content;
+  }
+}
+// general styles
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.show {
+  display: block;
+}
+.hide {
+  display: none;
+}
+input[type="text"]:focus {
+  border: color_function(mainblue) 1px solid;
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+body {
+  overflow-x: hidden;
+}
+// Tool tip text for HOA
+.hoaTooltiptext {
+  visibility: hidden;
+  @include font($open-sans, 15px, null, null, null);
+  @include boxSize(
+    300px,
+    auto,
+    color_function(myWhite),
+    color_function(textColor),
+    5px
+  );
+  padding: 8px 5px 15px 5px;
+  position: fixed;
+  z-index: 10;
+  @include for-phone-only() {
+    @include boxSize(100%, null, null, null, null);
+  }
+  &__closeSign {
+    @include font($open-sans, 24px, 700, null, null);
+    position: absolute;
+    right: 3%;
+    top: 0;
+    cursor: pointer;
+  }
+  &__header {
+    @include font($open-sans, 14px, 600, null, null);
+    margin-bottom: 5px;
+  }
+}
+.hoaTooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 58%;
+  left: -10px;
+  margin-top: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent color_function(textColor) transparent transparent;
+}
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: none;
+  -webkit-text-fill-color: color_function(textColor);
+  box-shadow: none;
+  transition: background-color 5000s ease-in-out 0s;
+}
+.indexPhoneNav {
+  position: absolute;
+  top: 0;
+  padding: 10px 10px 10px 10px;
+  @include for-phone-only() {
+    padding: 5px 2px 5px 2px;
+  }
+  @include boxSize(100%, 50px, null, transparent, null);
+  @include flex(center, center, null);
+  &__mobileMenueIcon {
+    position: absolute;
+    left: 15px;
+    padding: 5px;
+    @include for-phone-only() {
+      left: 10px;
+    }
+  }
+  &__mobileMenueLogo {
+    @include boxSize(135px, null, null, null, null);
+    @include for-phone-only() {
+      @include boxSize(120px, null, null, null, null);
+    }
+  }
+}
+// Phone Nav dropdown container
+.phoneNavMenue {
+  position: fixed;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  z-index: 200;
+  display: none;
+  @include boxSize(100%, 100vh, null, color_function(myWhite), null);
+  &__header {
+    @include flex(center, center, null);
+    position: absolute;
+    @include boxSize(100%, 50px, null, null, null);
+    border-bottom: color_function(borderColorC) 1px solid;
+  }
+  &__logo {
+    @include boxSize(110px, null, null, null, null);
+    margin: 5px 0;
+  }
+  &__closeIcon {
+    position: absolute;
+    left: 10px;
+    padding: 5px;
+    color: color_function(mainblue);
+    font-size: 25px;
+  }
+  &__body {
+    @include flex(null, null, null);
+    margin-top: 50px;
+    @include boxSize(100%, 100vh, null, null, null);
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  &__ul {
+    @include flex(null, null, column);
+    @include boxSize(100%, null, null, null, null);
+  }
+  &__li {
+    @include flex(null, center, null);
+    @include font($open-sans, 16px, 500, null, color_function(textColor));
+    padding: 15px 20px;
+    border-top: 1px #eee solid;
+    border-bottom: 1px #eee solid;
+    @include boxSize(100%, null, null, null, null);
+    position: relative;
+  }
+  &__liArrow {
+    margin-left: auto;
+    @include font(null, 25px, null, null, color_function(mainblue));
+    position: absolute;
+    padding: 7px;
+    right: 15px;
+  }
+  &__dropDown {
+    @include boxSize(100%, null, null, #fafafa, null);
+    display: none;
+  }
+  &__dropDownUl {
+    padding: 0 0 20px 35px;
+    @include flex(null, null, column);
+  }
+  &__dropDownLi {
+    text-decoration: none;
+    &--header {
+      @include font($new-open-sans, 16px, 700, null, color_function(textColor));
+      padding: 30px 0 10px 0;
+    }
+    &--option {
+      @include font($open-sans, 15px, 400, null, color_function(mainblue));
+      padding: 10px 0;
+    }
+    &--mt {
+      margin-top: 25px;
+    }
+  }
+  &__liText {
+    text-decoration: none;
+    @include font(null, null, null, null, color_function(textColor));
+    &--active {
+      @include font($new-open-sans, 16px, 800, null, color_function(mainblue));
+    }
+    &--extraMr {
+      margin: 15px 0;
+    }
+  }
+}
+// Top navigation bar on all pages
+.topnav {
+  overflow: hidden;
+  position: absolute;
+  top: 0;
+  @include flex(space-between, null, null);
+  @include boxSize(100%, 70px, null, color_function(myWhite), null);
+  padding: 0 5%;
+  border-bottom: 1px solid color_function(borderColorC);
+  @include for-tablet-landscape-up() {
+    padding: 0 0 0 0;
+  }
+  .topnav__section {
+    .mainNavUl {
+      @include flex(null, flex-end, null);
+      @include boxSize(100%, 100%, null, null, null);
+      .mainNavUl__list {
+        list-style: none;
+        @include boxSize(null, 70%, null, null, null);
+        @include flex(null, null, null);
+        margin: 0 10px;
+        @include for-tablet-landscape-up() {
+          margin: 0 3px;
+        }
+        a {
+          padding: 5px 10px 10px 10px;
+          margin-bottom: 10px;
+          text-decoration: none;
+          @include font(
+            $open-sans,
+            14.5px,
+            400,
+            null,
+            color_function(textColor)
+          );
+          @include for-tablet-landscape-up() {
+            padding: 5px 5px 10px 5px;
+          }
+        }
+        &:hover {
+          a {
+            color: color_function(mainblue);
+          }
+        }
+        @include for-tablet-landscape-up() {
+          &--hide {
+            display: none;
+          }
+          &--mr {
+            margin: 0 20px;
+          }
+        }
+      }
+    }
+  }
+  .topnav__middle {
+    @include flex(null, center, null);
+    @include for-tablet-landscape-up() {
+      margin: 0 5% 0 0;
+    }
+    @include for-tablet-portrait-up() {
+      margin: 0 auto 0 6%;
+    }
+    .topnav__img {
+      width: 135px;
+    }
+  }
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.navDropDown {
+  position: absolute;
+  z-index: 100;
+  overflow: hidden;
+  top: 70px;
+  ul {
+    margin-right: 5px;
+    li {
+      list-style: none;
+      margin-bottom: 15px;
+      h4 {
+        @include font($open-sans, 15px, 600, null, color_function(textColor));
+        padding-left: 7px;
+      }
+      a {
+        @include font($open-sans, 14px, null, null, color_function(mainblue));
+        text-decoration: none;
+        padding: 7px;
+      }
+    }
+  }
+  padding: 25px 45px 35px 45px;
+  @include boxSize(100%, auto, null, color_function(myWhite), null);
+  @include flex(null, null, null);
+  border-bottom: 1px solid #d1d1d5;
+  position: absolute;
+  .dropdownBox {
+    padding-right: 5px;
+    margin-right: 15px;
+    border-right: 1px solid #d1d1d5;
+    &__nonBorder {
+      border: none;
+    }
+    &__mainNavDropDown {
+      @include flex(null, null, column);
+    }
+  }
+  opacity: 0;
+  left: -100%;
+  transition-delay: 500ms;
+}
+.myZillowDropDown {
+  @include boxSize(20%, auto, null, color_function(myWhite), null);
+  border: #d1d1d5 1px solid;
+  z-index: 2;
+  position: absolute;
+  @include flex(null, null, column);
+  &__ul {
+    @include boxSize(100%, auto, null, null, null);
+    padding: 10px 25px 10px 25px;
+    li {
+      list-style: none;
+      margin: 20px 0;
+      h4 {
+        @include font($open-sans, 15px, 600, null, color_function(textColor));
+        padding-left: 7px;
+      }
+      a {
+        @include font($open-sans, 14px, null, null, color_function(mainblue));
+        text-decoration: none;
+        padding: 7px;
+      }
+    }
+    &__bb {
+      border-bottom: #d1d1d5 1px solid;
+    }
+  }
+  opacity: 0;
+  left: -100%;
+  transition-delay: 500ms;
+}
+// Banner section on index.html
+#banner {
+  @include boxSize(100%, 88vh, null, null, null);
+  background-image: url(img_function(bannerhouse));
+  background-position: 50% 30%;
+  background-size: cover;
+  @include grid(1, 1fr, null, null, null, null);
+  align-items: center;
+  @include for-tablet-landscape-up() {
+    background-position: 20% 0%;
+    @include boxSize(null, 100vh, null, null, null);
+  }
+  .bannerContent {
+    text-align: center;
+    @include flex(center, center, column);
+    #mainSearchResult {
+      @include flex(center, null, null);
+      width: 100%;
+      font-size: 0;
+      z-index: 10;
+      #searchId {
+        @include boxSize(
+          50%,
+          68px,
+          null,
+          color_function(myWhite),
+          4px 4px 4px 4px
+        );
+        @include flex(center, center, null);
+        position: relative;
+        border: 1px solid #d1d1d5;
+        @include for-tablet-landscape-up() {
+          @include boxSize(70%, null, null, null, null);
+        }
+        @include for-phone-only() {
+          @include boxSize(85%, null, null, null, null);
+        }
+        .searchTerm {
+          @include flex(center, center, null);
+          @include boxSize(92%, 100%, null, null, 4px 0 0 4px);
+          border: none;
+          outline: none;
+          @include for-phone-only() {
+            @include boxSize(88%, null, null, null, null);
+          }
+        }
+        input[type="text"].searchTerm {
+          padding-left: 30px;
+          @include font($open-sans, 16px, 600, null, null);
+          @include for-phone-only() {
+            padding-left: 10px;
+          }
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+        }
+        input[type="text"].searchTerm::-webkit-input-placeholder {
+          color: rgba(0, 0, 0, 0.4);
+        }
+
+        input[type="text"]:focus {
+          padding-left: 30px;
+          @include font($open-sans, 16px, 600, null, rgba(0, 0, 0, 0.8));
+          @include for-phone-only() {
+            padding-left: 10px;
+          }
+        }
+        .searchButton {
+          @include boxSize(
+            8%,
+            100%,
+            null,
+            color_function(myWhite),
+            0 4px 4px 0
+          );
+          border: none;
+          outline: none;
+          cursor: pointer;
+          @include font(null, 18px, null, null, color_function(mainblue));
+          @include for-phone-only() {
+            @include boxSize(12%, null, null, null, null);
+          }
+        }
+      }
+    }
+    // Moving Arrow on the banner
+    .fa-long-arrow-alt-down {
+      margin-top: 10%;
+      position: relative;
+      -webkit-animation: downArrow 0.5s 6; /* Safari 4.0 - 8.0 */
+      -webkit-animation-timing-function: ease;
+      -webkit-animation-fill-mode: forwards;
+      animation: downArrow 0.5s 6;
+      animation-direction: alternate;
+      animation-timing-function: ease;
+      animation-fill-mode: forwards;
+    }
+    @-webkit-keyframes downArrow {
+      from {
+        transform: translateY(10px);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    @keyframes downArrow {
+      from {
+        transform: translateY(10px);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+  }
+
+  h1 {
+    margin-bottom: 26px;
+    @include font(null, 58px, 600, null, color_function(myWhite));
+    @include for-phone-only() {
+      @include font(null, 45px, null, null, null);
+    }
+  }
+  p {
+    margin-bottom: 30px;
+    @include font($open-sans, 20px, 400, null, color_function(myWhite));
+    @include boxSize(70%, null, null, null, null);
+  }
+}
+// Custom autocomplete on the main page
+.autocomplete-items {
+  position: absolute;
+  border: 1px solid #d4d4d4;
+  border-bottom: none;
+  border-top: none;
+  z-index: 99;
+  /*position the autocomplete items to be the same width as the container:*/
+  top: 103.5%;
+  left: 0;
+  right: 0;
+  text-align: left;
+  @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.6));
+  .fa-search {
+    @include font(null, 18px, null, null, color_function(myLightBlue));
+    margin-right: 10px;
+  }
+}
+
+.autocomplete-items div {
+  padding: 10px;
+  cursor: pointer;
+  background-color: color_function(myWhite);
+  border-bottom: 1px solid #d4d4d4;
+}
+
+/*when hovering an item:*/
+.autocomplete-items div:hover {
+  background-color: #e9e9e9;
+}
+
+/*when navigating through the items using the arrow keys:*/
+.autocomplete-active {
+  background-color: color_function(myLightBlue) !important;
+  color: color_function(myWhite) fff;
+  .fa-search {
+    @include font(null, 18px, null, null, color_function(myWhite));
+  }
+}
+.autocomplete {
+  position: relative;
+  display: inline-block;
+}
+// Under banner section
+#underBanner {
+  background-color: #f9f9fb;
+  // Text under the banner
+  .textSection {
+    @include flex(center, center, column);
+    p {
+      text-align: center;
+      padding-top: 60px;
+      letter-spacing: 0;
+      @include font(null, 35px, 600, null, rgba($color: #000000, $alpha: 0.8));
+      @include for-phone-only() {
+        @include boxSize(80%, null, null, null, null);
+        @include font(null, 28px, null, null, null);
+      }
+    }
+    // Yellow line bellow the text
+    .yellowLine {
+      margin: 64px auto;
+      @include boxSize(150px, 2px, null, color_function(yellowCircle), null);
+    }
+  }
+  // Three big box under banner on index.html
+  .threeBox {
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, null, null);
+    padding-bottom: 100px;
+    @include for-tablet-landscape-up() {
+      @include flex(center, center, column);
+    }
+    .box {
+      cursor: pointer;
+      transition-duration: 0.4s;
+      margin: 15px;
+      text-align: center;
+      @include boxSize(30%, auto, null, color_function(myWhite), 4px);
+      border: rgb(235, 235, 235) 1.8px solid;
+      padding: 20px 0 60px 0;
+      &__header {
+        @include font(null, 34px, null, null, null);
+      }
+      &__para {
+        padding: 22px;
+        @include font($open-sans, 17px, null, null, null);
+      }
+      &__img {
+        @include boxSize(100%, null, null, null, null);
+      }
+      &__imageContainer {
+        @include boxSize(100%, null, null, null, null);
+      }
+      .boxBut {
+        @include boxSize(40%, 47px, null, null, null);
+        @include font($open-sans, 15px, 600, null, null);
+        @include buttonMaker(
+          color_function(mainblue),
+          color_function(myWhite),
+          2px,
+          null,
+          null
+        );
+        border: #a7a6ab 1px solid;
+        @include for-tablet-landscape-up() {
+          @include boxSize(45%, 50px, null, null, null);
+        }
+      }
+      @include for-tablet-landscape-up() {
+        @include boxSize(900px, null, null, null, null);
+        max-width: 100%;
+        margin: 15px 0;
+        @include flex(null, null, null);
+        &__text {
+          text-align: left;
+          @include boxSize(50%, null, null, null, null);
+          padding: 15px 5px 15px 5px;
+        }
+        &__img {
+          @include boxSize(100%, null, null, null, null);
+        }
+        &__imageContainer {
+          @include boxSize(50%, null, null, null, null);
+          @include flex(center, center, null);
+        }
+        &__header {
+          padding: 0 5px 0 0;
+          margin-bottom: 25px;
+        }
+        &__para {
+          padding: 0 5px 0 0;
+          @include font(null, 19px, null, null, null);
+        }
+        .boxBut {
+          @include boxSize(55%, 47px, null, null, null);
+          margin-top: 25px;
+        }
+      }
+      @include for-tablet-portrait-up() {
+        @include boxSize(95%, null, null, null, null);
+      }
+      @media (max-width: 755px) {
+        @include flex(center, center, column);
+        &__text {
+          text-align: center;
+          @include boxSize(100%, null, null, null, null);
+          padding: 15px;
+        }
+        &__img {
+          @include boxSize(100%, null, null, null, null);
+        }
+        &__imageContainer {
+          @include boxSize(100%, null, null, null, null);
+        }
+        &__header {
+          @include font(null, 30px, null, null, null);
+          padding: 0 5px;
+          margin-bottom: 25px;
+        }
+        &__para {
+          padding: 0 5px;
+          @include font(null, 16px, null, null, null);
+        }
+        .boxBut {
+          @include boxSize(65%, null, null, null, null);
+          padding: 2px 15px;
+        }
+      }
+    }
+  }
+}
+// Buttons above the footer
+.buttonsAndLinks {
+  text-align: center;
+  .buttons {
+    @include flex(center, null, null);
+    border-bottom: 1px solid #d8d8d8;
+    @include for-tablet-landscape-up() {
+      @include grid(2, 1fr, null, null, null, null);
+      justify-items: center;
+    }
+    .line {
+      @include boxSize(1px, 32px, null, #a7a6ab, null);
+      margin-top: 28px;
+      @include for-tablet-landscape-up() {
+        display: none;
+      }
+    }
+    .dropDownBut {
+      width: 20%;
+      @include for-tablet-landscape-up() {
+        width: 100%;
+        margin: 5px 0;
+        #rentals,
+        #browsHomes {
+          border-left: 1px #a7a6ab solid;
+        }
+      }
+      button {
+        margin: 20px 0;
+        cursor: pointer;
+        border: none;
+        @include boxSize(auto, null, null, color_function(myWhite), null);
+        @include flex(space-evenly, center, null);
+        @include font(null, 17px, null, null, null);
+        padding: 10px 15px;
+        width: 100%;
+        @include for-phone-only() {
+          @include flex(null, null, null);
+          span {
+            @include boxSize(80%, null, null, null, null);
+          }
+        }
+        i {
+          color: color_function(mainblue);
+          @include for-tablet-landscape-up() {
+            @include boxSize(20%, 100%, null, null, null);
+            margin-left: auto;
+          }
+        }
+        @include for-tablet-landscape-up() {
+          margin: 0;
+          padding-left: 25px;
+        }
+      }
+
+      .dropdown-content {
+        display: none;
+        .dropdown-content__stateSpans {
+          cursor: pointer;
+          display: block;
+          @include boxSize(270px, null, color_function(mainblue), null, null);
+          padding: 5px 0;
+          @include for-tablet-landscape-up() {
+            width: 100%;
+            text-align: left;
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  .bottomLinks {
+    border-bottom: 1px solid #d8d8d8;
+    @include boxSize(100%, auto, null, color_function(myWhite), null);
+    @include flex(center, center, null);
+    a {
+      text-decoration: none;
+      margin: 15px;
+      padding: 10px;
+      @include font($open-sans, 12.5px, null, null, #2a2a37);
+    }
+    @include for-phone-only() {
+      @include grid(2, 1fr, null, null, null, null);
+      a {
+        margin: 5px;
+        padding: 5px;
+      }
+    }
+  }
+}
+// Footer
+.footerInfo {
+  @include boxSize(100%, 270px, null, null, null);
+  @include font(null, null, null, null, color_function(textColor));
+  &--borderTp {
+    border-top: 1px #d8d8d8 solid;
+    padding: 15px 0 0 0;
+  }
+  @include for-tablet-portrait-up() {
+    @include boxSize(100%, auto, null, null, null);
+  }
+  &--autoHeight {
+    @include boxSize(100%, auto, null, null, null);
+    max-height: auto;
+  }
+  &__imageContainer {
+    @include boxSize(100%, null, null, null);
+  }
+  &__image {
+    width: 100%;
+  }
+  &__logos {
+    @include boxSize(100%, auto, null, color_function(myWhite) null);
+    @include flex(center, center, null);
+    img {
+      width: 125px;
+      margin-bottom: 5px;
+      @include for-tablet-portrait-up() {
+        width: 110px;
+      }
+    }
+    span {
+      @include font($open-sans, 12.5px, null, italic, #666666);
+      @include for-tablet-portrait-up() {
+        margin: 5px 2px;
+      }
+    }
+  }
+  &__text {
+    @include font(null, 13px, null, null, null);
+    @include boxSize(100%, auto, null, color_function(myWhite), null);
+    @include flex(center, null, null);
+  }
+  &__txtSpan {
+    text-align: center;
+    @include boxSize(60%, 100%, null, null, null);
+    padding: 5px 5px 0 5px;
+    @include for-tablet-portrait-up() {
+      @include boxSize(80%, 100%, null, null, null);
+      @include font(null, null, 500, null, null);
+    }
+    @include for-phone-only() {
+      @include boxSize(95%, null, null, null, null);
+    }
+    &--fullWidth {
+      @include boxSize(100%, null, null, null, null);
+      @include font(null, 12px, null, null, null);
+      padding: 24px 7px;
+    }
+  }
+  &--linkStyle {
+    text-decoration: none;
+    color: #007fff;
+  }
+  .fa,
+  .fab {
+    margin: 10px 5px;
+    vertical-align: middle;
+  }
+  .fa-twitter {
+    @include boxSize(null, null, color_function(myWhite), #55acee, 50%);
+    padding: 5px 4px 0 4px;
+    font-size: 25px;
+  }
+  .fa-facebook-f {
+    padding: 5px 10px 0 10px;
+    font-size: 25px;
+    text-align: center;
+    text-decoration: none;
+    @include boxSize(null, null, color_function(myWhite), #3b5998, 50%);
+  }
+  .fa-home {
+    font-size: 28px;
+  }
+}
+
+// Result page
+// Small navigation under the main navigation
+.resultNav {
+  position: absolute;
+  top: 70px;
+  padding: 10px 0 0 0;
+  @include boxSize(null, 57px, null, color_function(myWhite), null);
+  @include for-tablet-landscape-up() {
+    padding: 10px 0 0 0;
+  }
+  @media (max-width: 800px) {
+    top: 0;
+    padding: 0;
+    @include boxSize(null, 131px, null, null, null);
+  }
+  @include boxSize(100%, 57px, null, null, null);
+  border-bottom: 1px solid color_function(borderColorC);
+  // border-top: 1px solid color_function(borderColorC);
+  @include flex(null, center, null);
+  // Search input on the small navigation
+  &__smallSearch {
+    @media (max-width: 800px) {
+      @include flex(null, center, null);
+      flex-wrap: nowrap;
+      flex-basis: 100%;
+      margin: 3px 0 5px 0;
+      border-bottom: 1px solid #a7a6ab;
+      padding: 0 0 2px 0;
+    }
+  }
+  &__mobileIcons {
+    display: none;
+    @media (max-width: 800px) {
+      margin: 5px 0;
+      @include flex(null, center, null);
+      flex-wrap: nowrap;
+      @include boxSize(null, null, null, null, null);
+    }
+  }
+  .smallSearch {
+    position: relative;
+    margin: 0px 5px;
+    @include boxSize(250px, 35px, null, null, 3px);
+    border: 1px solid #a7a6ab;
+    @include flex(null, null, null);
+    @media (max-width: 800px) {
+      @include boxSize(auto, 35px, null, null, 3px);
+    }
+    #searchBoxResult {
+      outline: none;
+      border: none;
+      @include boxSize(220px, 100%, null, null, 2px 0 0 2px);
+      @media (max-width: 800px) {
+        @include boxSize(auto, 100%, null, null, 2px 0 0 2px);
+      }
+    }
+    input[type="text"]#searchBoxResult {
+      padding: 5px;
+      @include font($open-sans, 12px, 600, null, null);
+    }
+    input[type="text"]#searchBoxResult::-webkit-input-placeholder {
+      color: rgba(0, 0, 0, 0.3);
+    }
+
+    input[type="text"]#searchBoxResult:focus {
+      padding-left: 5px;
+      @include font($open-sans, 12px, 600, null, null);
+    }
+    #submitButtonResult {
+      @include boxSize(
+        28px,
+        100%,
+        color_function(mainblue),
+        color_function(myWhite),
+        0 2px 2px 0
+      );
+      border: none;
+      outline: none;
+      cursor: pointer;
+      font-size: 15px;
+      @media (max-width: 800px) {
+        position: absolute;
+        right: 0;
+      }
+    }
+    @media (max-width: 800px) {
+      margin: 0 5px;
+      @include boxSize(100%, null, null, null, null);
+    }
+  }
+  // Buttons on the navigation bar
+  .navButs {
+    @include boxSize(
+      auto,
+      30px,
+      color_function(mainblue),
+      color_function(myWhite),
+      2px
+    );
+    min-width: 103px;
+    max-width: 107px;
+    margin-left: 12px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    @include font($open-sans, 12px, 600, null, null);
+    border: 1px solid #a7a6ab80;
+    padding: 0 10px;
+
+    @media (max-width: 420px) {
+      padding: 0 10px;
+      margin-left: 5px;
+      min-width: auto;
+    }
+    &::after {
+      content: "";
+      top: 13px;
+      right: 38%;
+      position: absolute;
+      border-width: 10px;
+      border-style: solid;
+    }
+  }
+  .saleRentDropDown {
+    position: relative;
+    #homeType {
+      @include rentOrSale(11px);
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      @include for-tablet-portrait-up() {
+        @include rentOrSale(11px);
+        width: 85px;
+        padding: 0 2px;
+        margin-left: 5px;
+      }
+      @media (max-width: 320px) {
+        width: 80px;
+      }
+    }
+    #colorfulCircles {
+      #saleHome,
+      #potentialHome,
+      #rentHome,
+      #soldHome {
+        display: none;
+      }
+    }
+    #buttonTxt {
+      #all {
+        display: none;
+      }
+    }
+    #checkBoxContainer {
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      @include font($open-sans, 13px, 600, null, color_function(textColor));
+      position: absolute;
+      @include boxSize(410px, auto, null, color_function(myWhite), null);
+      display: none;
+      top: 36px;
+      z-index: 2;
+      flex-direction: column;
+      @include for-phone-only() {
+        @include boxSize(auto, null, null, null, null);
+      }
+      #checkboxId_1,
+      #checkboxId_2,
+      #checkboxId_3,
+      #checkboxId_4 {
+        &:hover {
+          label::before {
+            border: color_function(mainblue) 1px solid;
+          }
+        }
+      }
+      #checkboxId_5 {
+        @include doneButton();
+      }
+
+      .checkbox {
+        @include boxSize(
+          100%,
+          55px,
+          color_function(textColor),
+          color_function(myWhite),
+          null
+        );
+        border-bottom: 0.2px solid rgba(0, 0, 0, 0.5);
+        padding-left: 10px;
+        line-height: 55px;
+        user-select: none;
+        cursor: pointer;
+        &:hover {
+          label {
+            color: color_function(mainblue);
+          }
+        }
+        @include rentOrSale(12px);
+        @include font($open-sans, 13px, 600, null, rgba(0, 0, 0, 0.75));
+      }
+      input[type="checkbox"] {
+        opacity: 0;
+      }
+      @include customInputBuiding(
+        13px,
+        13px,
+        18px,
+        2px,
+        5px,
+        -14px,
+        -11.5px,
+        8px,
+        600,
+        color_function(textColor),
+        true,
+        rgba(178, 181, 189, 0.5)
+      );
+      input[type="checkbox"]:checked + label::before {
+        content: "";
+        background: color_function(mainblue);
+        border-color: color_function(mainblue);
+        box-shadow: 0 0 0 0.4px rgb(0, 106, 255), 0 0 4px 0 #007fff;
+      }
+      /*Hide the checkmark by default*/
+      input[type="checkbox"] + label::after {
+        content: none;
+      }
+      /*Unhide the checkmark on the checked state*/
+      input[type="checkbox"]:checked + label::after {
+        content: "";
+      }
+    }
+  }
+  .PriceDropDown {
+    position: relative;
+    #homePriceType {
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+      @include for-tablet-portrait-up() {
+        width: 60px;
+      }
+    }
+    #priceButContainer {
+      display: none;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      @include font($open-sans, 14px, 600, null, rgba(0, 0, 0, 0.75));
+      position: absolute;
+      @include boxSize(375px, auto, null, color_function(myWhite), null);
+      max-width: 375px;
+      top: 35px;
+      z-index: 2;
+      padding-top: 10px;
+      @include for-phone-only() {
+        @include boxSize(auto, null, null, null, null);
+        padding-left: 5px;
+      }
+      #priceRangeInput {
+        padding: 0 15px 0 20px;
+        @include for-phone-only() {
+          padding: 0 5px 15px 15px;
+        }
+
+        form {
+          @include flex(null, null, null);
+          flex-wrap: nowrap;
+          input[type="text"]:focus {
+            box-shadow: 0 0 5px rgb(30, 142, 255);
+            border: color_function(mainblue) 1px solid;
+            outline: none;
+          }
+          .priceSearch {
+            width: 48%;
+            height: 40px;
+            padding-left: 10px;
+            @include for-phone-only() {
+              width: 40%;
+              margin-left: 3px;
+              height: 37px;
+            }
+          }
+          #dash {
+            width: 7px;
+            height: 1.5px;
+            background: rgba($color: #000000, $alpha: 0.75);
+            margin: 20px 7px 0 7px;
+          }
+        }
+      }
+      #priceListContainer {
+        padding: 0 15px 0 20px;
+        @include boxSize(100%, auto, null, color_function(myWhite), null);
+        @include grid(2, 1fr, null, 12px, null, null);
+        @include font($open-sans, 16px, 600, null, rgba(0, 0, 0, 0.6));
+        .priceList {
+          width: 100%;
+          height: auto;
+          padding: 10px 0 10px 0;
+          ul {
+            list-style: none;
+            li {
+              margin-bottom: 10px;
+              cursor: pointer;
+            }
+          }
+          @include for-phone-only() {
+            display: none;
+          }
+        }
+      }
+    }
+    #doneContainer {
+      @include doneButton();
+    }
+  }
+  #bedsDropDown {
+    @include for-tablet-portrait-up() {
+      display: none;
+    }
+    position: relative;
+    #homeBedsType {
+      white-space: nowrap;
+      overflow: hidden !important;
+      text-overflow: ellipsis;
+    }
+    #bedsButContainer {
+      display: none;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      @include font($open-sans, 14px, 600, null, rgba(0, 0, 0, 0.75));
+      position: absolute;
+      @include boxSize(390px, auto, null, color_function(myWhite), null);
+      z-index: 2;
+      top: 35px;
+      #bedroomsInput {
+        padding: 10px 0px 5px 15px;
+        .bedList {
+          margin-top: 15px;
+          @include flex(null, null, null);
+          list-style: none;
+          input[type="radio"] {
+            opacity: 0;
+          }
+          label {
+            margin-right: 44px;
+          }
+          @include customInputBuiding(
+            60px,
+            32px,
+            14px,
+            null,
+            null,
+            null,
+            null,
+            null,
+            500,
+            rgba(0, 0, 0, 0.7),
+            false,
+            rgba(127, 133, 150, 0.5)
+          );
+          // Before buttons are checked
+          #beds-options-0 + label::before {
+            content: "Any";
+            @include radioCheckBox(35px, false);
+            border-radius: 3px 0 0 3px;
+          }
+          #beds-options-1 + label::before {
+            content: "1+";
+            @include radioCheckBox(35px, false);
+          }
+          #beds-options-2 + label::before {
+            content: "2+";
+            @include radioCheckBox(35px, false);
+          }
+          #beds-options-3 + label::before {
+            content: "3+";
+            @include radioCheckBox(35px, false);
+          }
+          #beds-options-4 + label::before {
+            content: "4+";
+            @include radioCheckBox(35px, false);
+          }
+          #beds-options-5 + label::before {
+            content: "5+";
+            @include radioCheckBox(35px, false);
+            border-radius: 0 3px 3px 0;
+          }
+          // After buttons are checked
+          #beds-options-0:checked + label::before {
+            content: "Any";
+            @include radioCheckBox(35px);
+          }
+          #beds-options-1:checked + label::before {
+            content: "1+";
+            @include radioCheckBox(35px);
+          }
+          #beds-options-2:checked + label::before {
+            content: "2+";
+            @include radioCheckBox(35px);
+          }
+          #beds-options-3:checked + label::before {
+            content: "3+";
+            @include radioCheckBox(35px);
+          }
+          #beds-options-4:checked + label::before {
+            content: "4+";
+            @include radioCheckBox(35px);
+          }
+          #beds-options-5:checked + label::before {
+            content: "5+";
+            @include radioCheckBox(35px);
+          }
+          // Exact bed list when unchecked
+          #exact-beds-options-0 + label::before {
+            content: "Studio";
+            @include radioCheckBox(35px, false);
+            border-radius: 3px 0 0 3px;
+          }
+          #exact-beds-options-1 + label::before {
+            content: "1";
+            @include radioCheckBox(35px, false);
+          }
+          #exact-beds-options-2 + label::before {
+            content: "2";
+            @include radioCheckBox(35px, false);
+          }
+          #exact-beds-options-3 + label::before {
+            content: "3";
+            @include radioCheckBox(35px, false);
+          }
+          #exact-beds-options-4 + label::before {
+            content: "4";
+            @include radioCheckBox(35px, false);
+          }
+          #exact-beds-options-5 + label::before {
+            content: "5";
+            @include radioCheckBox(35px, false);
+            border-radius: 0 3px 3px 0;
+          }
+          // Exact bed list when checked
+          #exact-beds-options-0:checked + label::before {
+            content: "Studio";
+            @include radioCheckBox(35px);
+          }
+          #exact-beds-options-1:checked + label::before {
+            content: "1";
+            @include radioCheckBox(35px);
+          }
+          #exact-beds-options-2:checked + label::before {
+            content: "2";
+            @include radioCheckBox(35px);
+          }
+          #exact-beds-options-3:checked + label::before {
+            content: "3";
+            @include radioCheckBox(35px);
+          }
+          #exact-beds-options-4:checked + label::before {
+            content: "4";
+            @include radioCheckBox(35px);
+          }
+          #exact-beds-options-5:checked + label::before {
+            content: "5";
+            @include radioCheckBox(35px);
+          }
+        }
+
+        #exactBedList {
+          display: none;
+          margin-bottom: 20px;
+        }
+        #exact {
+          user-select: none;
+          margin-bottom: 10px;
+          #exactMatch[type="checkbox"] {
+            opacity: 0;
+          }
+          label {
+            cursor: pointer;
+            left: 15px;
+          }
+          @include customInputBuiding(
+            12px,
+            12px,
+            15px,
+            2px,
+            3px,
+            -17.5px,
+            -15px,
+            6px,
+            500,
+            color_function(textColor),
+            true,
+            rgba(127, 133, 150, 0.5)
+          );
+          input[type="checkbox"]:checked + label::before {
+            content: "";
+            background: color_function(mainblue);
+            border-color: color_function(mainblue);
+          }
+          /*Hide the checkmark by default*/
+          input[type="checkbox"] + label::after {
+            content: none;
+          }
+          /*Unhide the checkmark on the checked state*/
+          input[type="checkbox"]:checked + label::after {
+            content: "";
+          }
+        }
+      }
+      #doneContainer-1 {
+        @include doneButton();
+      }
+    }
+  }
+  #houseDropDown {
+    position: relative;
+    #houseButContainer {
+      display: none;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      @include font($open-sans, 14px, 600, null, rgba(0, 0, 0, 0.75));
+      position: absolute;
+      @include boxSize(276px, auto, null, color_function(myWhite), null);
+      max-width: 276px;
+      top: 35px;
+      right: 0;
+      z-index: 2;
+      user-select: none;
+      padding-top: 15px;
+      fieldset {
+        padding: 0 15px 10px 20px;
+        border: none;
+        legend {
+          margin-bottom: 5px;
+        }
+        ul {
+          list-style: none;
+          li {
+            margin-bottom: 15px;
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+            label {
+              left: 5px;
+              top: 10px;
+            }
+            @include customInputBuiding(
+              12px,
+              12px,
+              15px,
+              2px,
+              3px,
+              -20px,
+              -17.5px,
+              6px,
+              600,
+              color_function(textColor),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+      }
+      #doneContainer-2 {
+        @include doneButton();
+      }
+    }
+  }
+  #moreDropDown {
+    position: relative;
+    .dash {
+      width: 8px;
+      height: 2px;
+      background: rgba(0, 0, 0, 0.2);
+      justify-self: center;
+      margin-top: 15px;
+    }
+    #moreButSmallnav {
+      margin-left: 12px;
+      @include boxSize(
+        60px,
+        32px,
+        color_function(mainblue),
+        color_function(myWhite),
+        2px
+      );
+      &::after {
+        content: "";
+        top: 15px;
+        right: 27%;
+        position: absolute;
+        border-width: 10px;
+        border-style: solid;
+      }
+      @include font($open-sans, 12px, 600, null, null);
+      border: 1px solid #a7a6ab80;
+      @include for-tablet-landscape-up() {
+        margin-left: 5px;
+      }
+      @media (max-width: 400px) {
+        margin-left: 4px;
+        @include boxSize(50px, null, null, null, null);
+      }
+    }
+    #moreMainContainer {
+      display: none;
+      position: absolute;
+      @include boxSize(430px, 480px, null, color_function(myWhite), null);
+      max-width: 430px;
+      @include font($open-sans, 14px, 600, null, rgba(0, 0, 0, 0.75));
+      top: 35px;
+      right: -50px;
+      z-index: 3;
+      user-select: none;
+      padding-top: 15px;
+      box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.3);
+      @include for-phone-only() {
+        @include boxSize(100%, 100vh, null, null, null);
+        padding-top: 0px;
+        top: -50px;
+      }
+      #moreButContainer {
+        @include boxSize(100%, 100%, null, null, null);
+        overflow-y: auto;
+        overflow-x: hidden;
+        .phoneOptions {
+          display: none;
+          @include for-phone-only() {
+            @include boxSize(100%, 45px, null, null, null);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            margin: 0 0 10px 0;
+            @include flex(space-between, center, null);
+            padding: 0 10px;
+          }
+          .resultNumberOnMoreBut {
+            @include font($open-sans, 17px, 700, null, #aaaaaa);
+          }
+          .PhoneMoreDoneButton {
+            outline: none;
+            border: none;
+            @include boxSize(
+              null,
+              null,
+              color_function(mainblue),
+              color_function(myWhite),
+              null
+            );
+            cursor: pointer;
+            padding: 3px 5px;
+            margin: 0 10px 0 5px;
+            @include font($open-sans, 14px, null, null, null);
+          }
+        }
+        .bathListFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          margin-bottom: 20px;
+          border: none;
+          .bathList {
+            list-style: none;
+            margin-bottom: 15px;
+            @include flex(null, null, null);
+            li {
+              input[type="radio"] {
+                opacity: 0;
+              }
+              @include customInputBuiding(
+                60px,
+                28px,
+                14px,
+                null,
+                null,
+                null,
+                null,
+                null,
+                500,
+                rgba(0, 0, 0, 0.7),
+                false,
+                rgba(127, 133, 150, 0.5)
+              );
+              @media (max-width: 400px) {
+                @include customInputBuiding(
+                  45px,
+                  28px,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null false,
+                  null
+                );
+              }
+              label {
+                line-height: 28px;
+                margin-right: 48px;
+                @media (max-width: 400px) {
+                  margin-right: 32px;
+                }
+              }
+              label::before {
+                @include font($open-sans, 15px, 500, null, rgba(0, 0, 0, 0.75));
+              }
+              // Before radio buttons are checked
+              #baths-options-0 + label::before {
+                content: "Any";
+                @include radioCheckBox(28px, false);
+                border-radius: 3px 0 0 3px;
+              }
+              #baths-options-1 + label::before {
+                content: "1+";
+                @include radioCheckBox(28px, false);
+              }
+              #baths-options-2 + label::before {
+                content: "2+";
+                @include radioCheckBox(28px, false);
+              }
+              #baths-options-3 + label::before {
+                content: "3+";
+                @include radioCheckBox(28px, false);
+              }
+              #baths-options-4 + label::before {
+                content: "4+";
+                @include radioCheckBox(28px, false);
+              }
+              #baths-options-5 + label::before {
+                content: "5+";
+                @include radioCheckBox(28px, false);
+                border-radius: 0 3px 3px 0;
+              }
+              // After radio buttons are checked
+              #baths-options-0:checked + label::before {
+                content: "Any";
+                @include radioCheckBox(28px);
+              }
+              #baths-options-1:checked + label::before {
+                content: "1+";
+                @include radioCheckBox(28px);
+              }
+              #baths-options-2:checked + label::before {
+                content: "2+";
+                @include radioCheckBox(28px);
+              }
+              #baths-options-3:checked + label::before {
+                content: "3+";
+                @include radioCheckBox(28px);
+              }
+              #baths-options-4:checked + label::before {
+                content: "4+";
+                @include radioCheckBox(28px);
+              }
+              #baths-options-5:checked + label::before {
+                content: "5+";
+                @include radioCheckBox(28px);
+              }
+            }
+          }
+        }
+        // HOA text and select box section
+        .hoaFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          border: none;
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          .hoaLabel {
+            position: relative;
+            line-height: 30px;
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+            i {
+              margin-left: 5px;
+              margin-right: 25px;
+              cursor: pointer;
+              @include font(null, 15px, null, null, #a7a6ab);
+              &:hover {
+                @include font(
+                  null,
+                  15px,
+                  null,
+                  null,
+                  color_function(textColor)
+                );
+              }
+            }
+          }
+          @include customSelect(null, auto, auto, 0, 100%);
+          @include for-phone-only() {
+            @include customSelect(null, 100%, 100%, 0, 100%);
+            .custom-select {
+              position: initial;
+            }
+            .select-items {
+              box-shadow: 0 0 20px 1px #2a2a33;
+              border-radius: 4px;
+              margin: auto;
+              width: 95%;
+              max-height: 100%;
+              height: 95vh;
+              top: 2.5vh;
+            }
+            .select-items div {
+              padding: 10px 0 10px 5px;
+              border-bottom: rgba(178, 181, 189, 0.8) 1px solid;
+            }
+          }
+        }
+        .openHouseFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #openHouseFieldsetText {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+            padding-top: 1px;
+          }
+          #openHouseInput {
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .ParkingSpotsFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #ParkingSpotsText {
+            padding-top: 4px;
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          @include customSelect(null, auto, auto, 0, 100%);
+        }
+        .mustHaveGarageFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #garageInput {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            padding-top: 1px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .squareFeetFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #squareFeetText {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            padding-top: 4px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          .selectContainer {
+            @include grid(null, null, true, null, null, 45% 10% 45%);
+            @include customSelect(null, 100%, auto, 0, 100%);
+            @include for-phone-only() {
+              @include customSelect(null, 100%, 100%, 0, 100%);
+              .custom-select {
+                position: initial;
+              }
+              .select-items {
+                box-shadow: 0 0 20px 1px #2a2a33;
+                border-radius: 4px;
+                margin: auto;
+                width: 95%;
+                max-height: 100%;
+                height: 95vh;
+                top: 2.5vh;
+              }
+              .select-items div {
+                padding: 10px 0 10px 5px;
+                border-bottom: rgba(178, 181, 189, 0.8) 1px solid;
+              }
+            }
+          }
+        }
+        .lotSizeFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #lotSizeText {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            padding-top: 4px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          .selectContainer {
+            @include grid(null, null, true, null, null, 45% 10% 45%);
+            #lotFirstSelect {
+              @include customSelect(null, 100%, 150px, 0, 100%);
+              @include for-phone-only() {
+                @include customSelect(null, 100%, 100%, 0, 100%);
+                .custom-select {
+                  position: initial;
+                }
+                .select-items {
+                  box-shadow: 0 0 20px 1px #2a2a33;
+                  border-radius: 4px;
+                  margin: auto;
+                  width: 95%;
+                  max-height: 100%;
+                  height: 95vh;
+                  top: 2.5vh;
+                }
+                .select-items div {
+                  padding: 10px 0 10px 5px;
+                  border-bottom: rgba(178, 181, 189, 0.8) 1px solid;
+                }
+              }
+            }
+            #lotsecondSelect {
+              @include customSelect(null, 100%, 150px, -35px, null);
+              @include for-phone-only() {
+                @include customSelect(null, 100%, 100%, 0, 100%);
+                .custom-select {
+                  position: initial;
+                }
+                .select-items {
+                  box-shadow: 0 0 20px 1px #2a2a33;
+                  border-radius: 4px;
+                  margin: auto;
+                  width: 95%;
+                  max-height: 100%;
+                  height: 95vh;
+                  top: 2.5vh;
+                }
+                .select-items div {
+                  padding: 10px 0 10px 5px;
+                  border-bottom: rgba(178, 181, 189, 0.8) 1px solid;
+                }
+              }
+            }
+          }
+        }
+        .basementFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #basementText {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+            padding-top: 1px;
+          }
+          #basementInput {
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .yearBuiltFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #yearBuiltText {
+            padding-top: 4px;
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          .inputTextContainer {
+            @include grid(null, null, true, null, null, 45% 10% 45%);
+            input {
+              padding: 5px 10px;
+            }
+            input::placeholder {
+              @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.3));
+              @media (max-width: 380px) {
+                @include font(null, 14px, null, null, null);
+              }
+            }
+          }
+        }
+        .finishFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          input[type="checkbox"] {
+            opacity: 0;
+          }
+          #finishInput {
+            margin-bottom: 15px;
+          }
+          @include customInputBuiding(
+            12px,
+            12px,
+            15px,
+            2px,
+            3px,
+            -22px,
+            -19.5px,
+            6px,
+            500,
+            rgba(0, 0, 0, 0.75),
+            true,
+            rgba(127, 133, 150, 0.5)
+          );
+          label {
+            padding-left: 10px;
+            left: 5px;
+            margin-left: 20px;
+          }
+          input[type="checkbox"]:checked + label::before {
+            content: "";
+            background: color_function(mainblue);
+            border-color: color_function(mainblue);
+          }
+          /*Hide the checkmark by default*/
+          input[type="checkbox"] + label::after {
+            content: none;
+          }
+          /*Unhide the checkmark on the checked state*/
+          input[type="checkbox"]:checked + label::after {
+            content: "";
+          }
+        }
+        .storiesFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #storiesText {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            padding-top: 1px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          #storiesInput {
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .otherAmenitiesFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          margin-bottom: 15px;
+          border: none;
+          legend {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            margin-bottom: 20px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          #poolInput,
+          #waterFrontInput {
+            margin-left: 15px;
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+            input {
+              margin-bottom: 20px;
+            }
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .viewFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 50% 50%);
+          margin-bottom: 15px;
+          border: none;
+          legend {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            margin-bottom: 20px;
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          div {
+            margin-left: 15px;
+            input[type="checkbox"] {
+              opacity: 0;
+            }
+            input {
+              margin-bottom: 20px;
+            }
+            @include customInputBuiding(
+              12px,
+              12px,
+              14px,
+              2px,
+              3px,
+              -22px,
+              -19.5px,
+              6px,
+              500,
+              rgba(0, 0, 0, 0.75),
+              true,
+              rgba(127, 133, 150, 0.5)
+            );
+            label {
+              padding-left: 10px;
+              left: 5px;
+            }
+            input[type="checkbox"]:checked + label::before {
+              content: "";
+              background: color_function(mainblue);
+              border-color: color_function(mainblue);
+            }
+            /*Hide the checkmark by default*/
+            input[type="checkbox"] + label::after {
+              content: none;
+            }
+            /*Unhide the checkmark on the checked state*/
+            input[type="checkbox"]:checked + label::after {
+              content: "";
+            }
+          }
+        }
+        .daysOnZillowFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+          #daysOnZillowText {
+            padding-top: 4px;
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          @include customSelect(null, auto, auto, 0, -745%);
+        }
+        .KeywordsFieldset {
+          padding: 0 25px 0 20px;
+          @media (max-width: 380px) {
+            padding: 0 15px 0 10px;
+          }
+          #KeywordsText {
+            padding-top: 4px;
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.75));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          input {
+            padding: 5px 10px;
+            width: 100%;
+          }
+          input::placeholder {
+            @include font($open-sans, 15px, 600, null, rgba(0, 0, 0, 0.3));
+            @media (max-width: 380px) {
+              @include font(null, 14px, null, null, null);
+            }
+          }
+          @include grid(null, null, true, null, null, 45% 55%);
+          margin-bottom: 15px;
+        }
+        #doneContainer-3 {
+          @include doneButton();
+        }
+      }
+    }
+  }
+  #saveSearch {
+    margin-left: 12px;
+    @include boxSize(
+      115px,
+      32px,
+      color_function(myWhite),
+      color_function(mainblue),
+      3px
+    );
+    border: rgb(167, 166, 171) 1px solid;
+    @include font($open-sans, 12px, 600, null, null);
+    @include for-tablet-landscape-up() {
+      display: none;
+    }
+  }
+  .mobileButs {
+    display: none;
+    padding: 10px 0;
+    @include for-tablet-portrait-up() {
+      @include boxSize(100%, null, null, color_function(myWhite), null);
+      @include flex(null, null, null);
+      .mobSaveSearchBut {
+        border: none;
+        @include boxSize(
+          null,
+          null,
+          color_function(mainblue),
+          color_function(myWhite),
+          null
+        );
+        padding: 3px 5px;
+        cursor: pointer;
+        @include font($open-sans, 14px, null, null, null);
+      }
+      .mobSortBut {
+        outline: none;
+        border: none;
+        @include boxSize(
+          null,
+          null,
+          color_function(mainblue),
+          color_function(myWhite),
+          null
+        );
+        cursor: pointer;
+        padding: 3px 5px;
+        margin: 0 0 0 auto;
+        @include font($open-sans, 14px, null, null, null);
+      }
+      .mobMapBut {
+        outline: none;
+        border: none;
+        @include boxSize(
+          null,
+          null,
+          color_function(mainblue),
+          color_function(myWhite),
+          null
+        );
+        cursor: pointer;
+        padding: 3px 5px;
+        margin: 0 10px 0 5px;
+        @include font($open-sans, 14px, null, null, null);
+      }
+    }
+  }
+  // orange and purple circles on the button of small navigation
+  #saleCircle {
+    @include boxSize(10px, 10px, null, color_function(redCircle), 50%);
+    display: inline-block;
+    @include font($open-sans, 12px, 600, null, null);
+  }
+  #rentCircle {
+    @include boxSize(10px, 10px, null, color_function(violetCircle), 50%);
+    display: inline-block;
+  }
+  @include for-tablet-portrait-up() {
+    @include flex(null, null, null);
+    @include boxSize(null, auto, null, null, null);
+  }
+}
+
+// sort button above homeInfo
+.homeInfoHeader {
+  @include boxSize(100%, 104px, null, color_function(myWhite), null);
+  @include customSelect(null, auto, 162px, null, 100%);
+  padding: 20px;
+  @media (max-width: 980px) {
+    padding: 20px 10px;
+  }
+  @include flex(null, center, null);
+  &__sortBox {
+    margin-left: auto;
+    @include flex(null, center, null);
+    @include for-tablet-portrait-up() {
+      display: none;
+    }
+  }
+  .select-selected {
+    background-color: transparent;
+    box-shadow: none !important;
+    border: none !important;
+    position: relative;
+    border-radius: 4px;
+    margin: 0;
+    z-index: 2;
+    padding: 0 30px 0 0;
+  }
+  // Options container under the select box
+  .select-items div {
+    padding: 1px 0 1px 5px;
+    &:hover {
+      color: color_function(myWhite);
+    }
+  }
+  .select-items div:hover,
+  .same-as-selected {
+    background-color: color_function(mainblue);
+    color: color_function(myWhite);
+  }
+  .select-selected:after {
+    border: none;
+    content: "";
+  }
+  .select-selected.select-arrow-active:after {
+    border: none;
+  }
+  &__headerText {
+    @include boxSize(100%, null, null, null, null);
+    @include font($open-sans, 18px, null, null, color_function(textColor));
+    margin: 0 0 8px 0;
+  }
+  &__resultNum {
+    @include font($open-sans, 16px, 500, null, color_function(textColor));
+  }
+  &__sortText {
+    @include font($open-sans, 14px, 600, null, color_function(textColor));
+  }
+  &__selectboxWrapper {
+    border: transparent 1px solid;
+    position: relative;
+    @include flex(null, center, row);
+    padding: 0 0 0 5px;
+    &:hover {
+      border: 1px dodgerblue solid;
+    }
+    .selectArrow {
+      position: absolute;
+      right: 5px;
+      color: color_function(mainblue);
+      z-index: 1;
+    }
+    &--blueBorder {
+      border: 1px solid color_function(mainblue);
+    }
+  }
+}
+.rotateArrow {
+  transform: rotate(180deg);
+}
+.mainSection {
+  padding-top: 127px;
+  @include boxSize(100%, 100vh, null, #eee, null);
+  @include grid(null, null, true, null, false, 46.5% 53.5%);
+  @include for-tablet-landscape-up() {
+    @include grid(null, null, true, null, false, 60% 40%);
+  }
+  @include for-tablet-portrait-up() {
+    padding-top: 161px;
+    @include grid(null, null, true, null, false, 100%);
+  }
+  @media (max-width: 800px) {
+    padding-top: 132px;
+  }
+
+  // Google map on result.html
+  .map {
+    @include boxSize(100%, 100%, null, null, null);
+    @include for-tablet-portrait-up() {
+      display: none;
+    }
+  }
+  #homeContainer {
+    scroll-behavior: smooth;
+    overflow-y: auto;
+    @include boxSize(100%, 100%, null, color_function(myWhite), null);
+    overflow-x: hidden;
+    position: relative;
+    .mapContainer {
+      display: none;
+      @include for-tablet-portrait-up() {
+        display: none;
+        position: absolute;
+        @include boxSize(100%, 100%, null, null, null);
+        z-index: 1;
+      }
+    }
+    // Homes on the right side of the map
+    #homeInfo {
+      @include font($open-sans, null, null, null, null);
+      @include grid(2, 1fr, false, 10px, false, null);
+      padding: 5px;
+      @include for-tablet-landscape-up() {
+        @include grid(1, 1fr, false, 10px, false, null);
+      }
+      @include for-tablet-portrait-up() {
+        @include grid(2, 1fr, false, 10px, false, null);
+        padding: 5px;
+      }
+      @include for-phone-only() {
+        padding: 0;
+        @include grid(1, 1fr, null, 0px, null, null);
+        justify-items: center;
+      }
+      .home {
+        cursor: pointer;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+        border-bottom: color_function(mainblue) 4px solid;
+        @include boxSize(100%, auto, null, null, null);
+        @include flex(null, null, column);
+        @include for-phone-only() {
+          @include boxSize(100%, auto, null, null, null);
+          margin-bottom: 5px;
+        }
+        .imageHolderClass {
+          width: 100%;
+          .imageClass {
+            @include boxSize(100%, auto, null, null, null);
+            @media (max-width: 680px) {
+              max-height: 60vh;
+            }
+            @media (max-width: 599px) {
+              @include boxSize(100%, auto, null, null, null);
+            }
+          }
+        }
+        // Information about Homes
+        .homeTextContainer {
+          @include flex(null, null, column);
+          padding-left: 10px;
+          .homeInfoFirstRow {
+            @include flex(null, center, null);
+            flex-wrap: nowrap;
+            margin: 0 0 4px 0;
+            // Home Price
+            li {
+              list-style: none;
+            }
+            .moneySection {
+              @include font($open-sans, 26px, 600, null, rgb(42, 42, 51));
+              margin-right: 10px;
+              @include for-tablet-portrait-up() {
+                @include font(null, 22px, null, null, null);
+              }
+            }
+            .number {
+              @include font($open-sans, 14px, 600, null, rgb(42, 42, 21));
+              margin: 0 4px 0 0;
+            }
+            .unit {
+              @include font($open-sans, 14px, 500, null, rgb(60, 60, 60));
+            }
+            .line {
+              font-size: 10px;
+              border-right: rgb(190, 190, 190) 1px solid;
+              margin: 0px 6px 0 6px;
+              @include boxSize(1px, 20px, null, null, null);
+            }
+          }
+          // Address line
+          .homeInfoSecondRow {
+            white-space: nowrap;
+            overflow: hidden !important;
+            text-overflow: ellipsis;
+            @include boxSize(98%, null, null, null, null);
+            @include font(
+              $open-sans,
+              15px,
+              600,
+              null,
+              color_function(textColor)
+            );
+            padding-bottom: 5px;
+            @include for-tablet-portrait-up() {
+              @include font(null, 14px, null, null, null);
+              width: 95%;
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+            }
+          }
+          // For rent or sale
+          .homeInfoThirdRow {
+            .inlineText {
+              margin: 0 0 0 4px;
+            }
+            margin: 0 0 4px 0;
+            @include flex(null, center, null);
+            list-style: none;
+            @include rentOrSale(12px);
+            @include font(
+              $open-sans,
+              14px,
+              600,
+              null,
+              color_function(textColor)
+            );
+            @include for-tablet-portrait-up() {
+              @include font(null, 13px, null, null, null);
+            }
+          }
+        }
+      }
+    }
+    #pageButtons {
+      padding: 15px 0;
+      user-select: none;
+      @media (max-width: 380px) {
+        margin-bottom: 15px;
+      }
+      @include flex(center, null, null);
+      button {
+        outline: none;
+        @include font($open-sans, 12px, 500, null, color_function(textColor));
+        @include boxSize(36px, 36px, null, color_function(myWhite), null);
+        @media (max-width: 380px) {
+          @include boxSize(30px, 30px, null, color_function(myWhite), null);
+        }
+        border: none;
+        cursor: pointer;
+        margin: 0 10px;
+        &:hover {
+          color: color_function(mainblue);
+        }
+      }
+      #orderedPageList {
+        @include flex(null, null, null);
+        overflow: hidden;
+        .activePageBut {
+          @include boxSize(
+            null,
+            null,
+            color_function(myWhite),
+            color_function(textColor),
+            null
+          );
+          &:hover {
+            background: color_function(mainblue);
+          }
+        }
+        .pageButList {
+          @include boxSize(
+            null,
+            null,
+            color_function(textColor),
+            color_function(myWhite),
+            null
+          );
+          &:hover {
+            color: color_function(mainblue);
+            background: rgba(0, 0, 0, 0.05);
+          }
+        }
+        .paginationDots {
+          line-height: 34px;
+        }
+        li {
+          div {
+            @include boxSize(36px, 36px, null, null, 50%);
+            text-align: center;
+            line-height: 36px;
+            cursor: pointer;
+            margin: 0 3px;
+          }
+        }
+      }
+    }
+  }
+  &__noResultContainer {
+    display: none;
+    @include boxSize(
+      100%,
+      null,
+      null,
+      color_function(myWhite),
+      color_function(textColor)
+    );
+  }
+  &__whyZillow {
+    @include boxSize(null, null, null, #f1f1f4, color_function(textColor));
+    padding: 25px 15px;
+  }
+  &__paraHead {
+    @include font(null, null, 600, null, null);
+  }
+  &__paragraph {
+    @include font(null, 12px, null, null, #54545a);
+    &--border {
+      padding: 0 0 10px 0;
+      margin: 0 0 10px 0;
+      border-bottom: 1.2px solid #a7a6ab;
+      @include font(null, 12px, null, null, color_function(textColor));
+    }
+    &--marginBot {
+      margin: 0 0 15px 0;
+    }
+  }
+  &__changeSearchTxt {
+    @include font(null, 15px, null, null, color_function(textColor));
+    padding: 8px 0 8px 20px;
+  }
+  &__noMatchTxt {
+    @include font(null, 20px, 600, null, null);
+    padding-left: 20px;
+    &--pad {
+      padding: 20px;
+    }
+  }
+  &__removeFiterTxt {
+    @include font(null, 15px, 600, null, color_function(mainblue));
+    margin: 0 0 26px 20px;
+    cursor: pointer;
+  }
+  &__whyZillowHeader {
+    @include font(null, 13px, null, null, color_function(textColor));
+    margin: 0 0 15px 0;
+  }
+  &__noResult {
+    @include boxSize(100%, null, null, color_function(myWhite), null);
+  }
+}
+// page which appears when click on a home box
+.mainBigHomeContainer {
+  overflow: hidden;
+  @include flex(center, center, null);
+  @include boxSize(100%, 100vh, null, rgba(42, 42, 51, 0.65), null);
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 5;
+  .directionIcon {
+    @include font(null, 25px, null, null, color_function(mainblue));
+    @include flex(center, center, null);
+    padding: 5px;
+    @include for-phone-only() {
+      margin: 0 0 0 15px;
+      @include font(null, null, null, null, rgba(255, 255, 255, 0.9));
+    }
+  }
+  &__smallHeader {
+    z-index: 10;
+    display: none;
+    @include for-tablet-portrait-up() {
+      @include flex(center, null, null);
+      @include boxSize(100%, 100px, null, color_function(myWhite), null);
+      position: absolute;
+      top: 0;
+    }
+    @include for-phone-only() {
+      @include boxSize(null, 45px, null, null, null);
+      max-height: 45px;
+    }
+  }
+  &__firstRow {
+    @include boxSize(100%, 50px, null, color_function(myWhite), null);
+    @include flex(center, center, null);
+    padding: 0 10px 0 10px;
+    border-bottom: rgba(167, 166, 171, 0.5) 0.7px solid;
+    @include for-phone-only() {
+      @include boxSize(100%, 45px, null, null, null);
+      padding: 0 10px 0 10px;
+    }
+    .mobileMenueIcon {
+      margin-right: auto;
+      @include font(null, 25px, null, null, color_function(mainblue));
+      cursor: pointer;
+    }
+  }
+  &__hedearLogo {
+    margin-right: auto;
+    @include boxSize(135px, null, null, null, null);
+    padding-top: 5px;
+    @include for-phone-only() {
+      @include boxSize(110px, null, null, null, null);
+    }
+  }
+  &__secondRow {
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, null, null);
+    padding: 5px 15px;
+    border-bottom: rgba(167, 166, 171, 0.5) 0.7px solid;
+    @include for-tablet-portrait-up() {
+      @include boxSize(100%, 50px, null, null, null);
+    }
+    @include for-phone-only() {
+      @include boxSize(100%, auto, null, null, null);
+      top: 45px;
+      padding: 8px 10px 8px 0;
+      background-image: linear-gradient(
+        rgba(47, 47, 160, 0.3),
+        rgba(47, 47, 160, 0.1)
+      );
+      border-bottom: none;
+    }
+  }
+  .phoneHomeMoreButContainer {
+    @include flex(center, center, null);
+    position: relative;
+    &__dropDown {
+      @include boxSize(240px, auto, null, color_function(myWhite) null);
+      position: absolute;
+      top: 100%;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+      right: 0;
+      a {
+        text-decoration: none;
+        display: block;
+        @include font($open-sans, 14px, 400, null, color_function(textColor));
+        @include boxSize(100%, null, null, null, null);
+        padding: 8px 16px;
+        &:hover {
+          background-color: #d9f0f9;
+          @include font(null, null, 700, null, null);
+        }
+      }
+    }
+  }
+  .HomeContainerIcon {
+    @include boxSize(
+      null,
+      null,
+      color_function(mainblue),
+      color_function(myWhite),
+      null
+    );
+    outline: none;
+    border: none;
+    @include flex(center, center, null);
+    @include font($open-sans, 14px, null, null, null);
+    @include for-phone-only() {
+      padding: 0 10px;
+    }
+    &--left {
+      margin-left: auto;
+    }
+    &__txt {
+      margin-left: 5px;
+      @include for-phone-only() {
+        display: none;
+      }
+    }
+    @include for-phone-only() {
+      @include boxSize(
+        null,
+        null,
+        rgba(255, 255, 255, 0.85),
+        transparent,
+        null
+      );
+    }
+  }
+  .homeContainer {
+    @include boxSize(90%, 100vh, null, color_function(myWhite), null);
+    @include grid(null, null, true, null, null, 61% 39%);
+    justify-self: center;
+    overflow: hidden;
+    @include for-tablet-landscape-up() {
+      @include grid(null, null, true, null, null, 55% 45%);
+    }
+    @media (max-width: 1000px) {
+      @include grid(null, null, true, null, null, 50% 50%);
+    }
+    @include for-tablet-portrait-up() {
+      @include grid(null, null, true, null, null, 40% 60%);
+      @include boxSize(100%, 100vh, null, null, null);
+      padding-top: 100px;
+    }
+    @include for-phone-only() {
+      @include flex(null, null, null);
+      overflow-y: scroll;
+      overflow-x: hidden;
+      @include boxSize(100%, 100vh, null, null, null);
+      padding-top: 45px;
+    }
+    .picContainer {
+      position: relative;
+      @include boxSize(100%, 100%, null, #eee, null);
+      overflow-x: hidden;
+      overflow-y: scroll;
+      @include for-phone-only() {
+        overflow: hidden;
+        height: 245px;
+      }
+      @media (max-width: 430px) {
+        height: 260px;
+      }
+      @media (max-width: 400px) {
+        height: 245px;
+      }
+      #picLeftColumn {
+        @include boxSize(100%, null, null, #eee, null);
+        @include flex(null, null, null);
+        @include for-phone-only() {
+          @include flex(null, null, row);
+          flex-wrap: nowrap;
+          position: absolute;
+          top: 50%;
+          transform: translate(0, -50%);
+        }
+        .homeBox {
+          padding: 0 2px;
+          max-width: 49.8%;
+          margin-bottom: 5px;
+          @include for-tablet-landscape-up() {
+            max-width: 100%;
+            margin-bottom: 2px;
+          }
+          @include for-phone-only() {
+            min-width: 80%;
+          }
+          @media (max-width: 420px) {
+            min-width: 100%;
+          }
+        }
+        #smallImage0 {
+          min-width: 100%;
+          @include for-phone-only() {
+            min-width: 80%;
+            margin-left: 10%;
+          }
+          @media (max-width: 420px) {
+            min-width: 100%;
+            margin: 0;
+          }
+        }
+      }
+      &__picCounter {
+        display: none;
+        @include for-phone-only() {
+          @include flex(center, center, null);
+          position: absolute;
+          right: 15px;
+          bottom: 15px;
+          @include font($open-sans, 13px, null, null, null);
+          @include boxSize(
+            62px,
+            22px,
+            color_function(myWhite),
+            rgba(0, 0, 0, 0.5),
+            null
+          );
+        }
+      }
+    }
+    // Right column in home box
+    &__rightInfo {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      background: #eee;
+      @include flex(null, null, column);
+      @include boxSize(100%, auto, null, null, null);
+      flex-wrap: nowrap;
+      @include for-phone-only() {
+        overflow: hidden;
+      }
+    }
+    &__bottomRight {
+      overflow-x: hidden;
+      overflow-y: scroll;
+      @include flex(null, null, column);
+      @include boxSize(100%, auto, null, null, null);
+      #overview {
+        @include boxSize(100%, auto, null, color_function(myWhite), 3px);
+        box-shadow: rgb(209, 209, 213) 0px 0px 4px;
+        padding: 10px 15px;
+        @include for-phone-only() {
+          padding: 10px 10px;
+        }
+        .bigBoxHomeOverviewText {
+          @include flex(null, center, null);
+          padding: 5px 0 14px 0;
+          border-bottom: 1px solid color_function(borderColorC);
+          @include font($open-sans, 20px, 600, null, null);
+        }
+        #overviewOptions {
+          padding: 15px 0;
+          @include grid(3, 1fr, null, null, null, null);
+          text-align: center;
+          border-bottom: 1px solid color_function(borderColorC);
+          .txtOverview {
+            @include font($open-sans, 14px, 400, null, null);
+          }
+          .txtNum {
+            @include font($open-sans, 16px, 800, null, null);
+          }
+        }
+        #disclaimer {
+          padding: 15px 0;
+          @include font(
+            $open-sans,
+            15px,
+            null,
+            null,
+            color_function(textColor)
+          );
+          line-height: 1.5;
+          text-align: justify;
+        }
+        .overview__listingAgent {
+          @include boxSize(100%, auto, null, null, null);
+          @include flex(null, center, null);
+        }
+        .overview__AgentHeader {
+          flex-basis: 100%;
+          padding-bottom: 10px;
+          @include font($open-sans, 18px, null, null, null);
+        }
+        .overview__agentImg {
+          @include boxSize(45px, 45px, null, null, 50%);
+          margin-right: 10px;
+        }
+        #homeFeatureTable {
+          width: 100%;
+          tr {
+            @include grid(null, null, true, null, null, 32% 68%);
+            @include for-phone-only() {
+              @include grid(null, null, true, null, null, 40% 60%);
+            }
+            padding: 8px 0px;
+            th {
+              text-align: left;
+              @include font(
+                $open-sans,
+                15px,
+                600,
+                null,
+                color_function(textColor)
+              );
+              i {
+                @include font(
+                  null,
+                  18px,
+                  null,
+                  null,
+                  color_function(myLightBlue)
+                );
+                padding-right: 8px;
+              }
+            }
+            td {
+              text-overflow: ellipsis;
+              overflow: hidden;
+              white-space: nowrap;
+              @include font(
+                $open-sans,
+                15px,
+                400,
+                null,
+                color_function(textColor)
+              );
+            }
+          }
+        }
+      }
+    }
+    // Text information about home
+    &__topRight {
+      @include boxSize(100%, auto, null, color_function(myWhite), null);
+      @include flex(null, null, column);
+      border-bottom: 1px solid color_function(borderColorC);
+      padding: 10px 15px;
+      .logoSection {
+        padding: 0 0 10px 0;
+        border-bottom: 1px solid color_function(borderColorC);
+        @include flex(null, null, null);
+        @include for-tablet-portrait-up() {
+          display: none;
+        }
+        // Logo
+        img {
+          @include boxSize(130px, 30px, null, null, null);
+          align-self: center;
+        }
+        // Three blue buttons beside the logo
+        .logoTxt {
+          @include font($open-sans, 15px, 600, null, null);
+          margin-left: 5px;
+        }
+        #heart {
+          margin-left: auto;
+          @include buttonMaker(
+            color_function(mainblue),
+            transparent,
+            null,
+            none,
+            null
+          );
+          margin-right: 5px;
+          border: none;
+        }
+        #share {
+          @include buttonMaker(
+            color_function(mainblue),
+            transparent,
+            null,
+            none,
+            null
+          );
+          border: none;
+          margin-right: 5px;
+        }
+        .homeMoreButContainer {
+          position: relative;
+          @include flex(center, center, null);
+          #more {
+            @include buttonMaker(
+              color_function(mainblue),
+              transparent,
+              null,
+              none,
+              null
+            );
+            border: none;
+            @include flex(center, center, null);
+          }
+          &__dropDown {
+            @include boxSize(240px, auto, null, color_function(myWhite) null);
+            position: absolute;
+            top: 100%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
+            right: 0;
+            a {
+              text-decoration: none;
+              display: block;
+              @include font(
+                $open-sans,
+                14px,
+                400,
+                null,
+                color_function(textColor)
+              );
+              @include boxSize(100%, null, null, null, null);
+              padding: 8px 16px;
+              &:hover {
+                background-color: #d9f0f9;
+                @include font(null, null, 700, null, null);
+              }
+            }
+          }
+        }
+      }
+    }
+    &__buttons {
+      @include flex(null, null, null);
+      margin: 10px 0;
+      #getMoreInfoBut {
+        @include boxSize(
+          95%,
+          42px,
+          color_function(myWhite),
+          color_function(mainblue),
+          3px
+        );
+      }
+      // Request tour and request apply buttons for rent homes
+      .requestTourBut {
+        margin-left: 5px;
+        @include boxSize(
+          45%,
+          42px,
+          color_function(myWhite),
+          color_function(mainblue),
+          3px
+        );
+        border: none;
+      }
+      .requestApplyBut {
+        margin-right: 5px;
+        @include boxSize(
+          45%,
+          42px,
+          color_function(mainblue),
+          color_function(myWhite),
+          3px
+        );
+        border: 1px solid #a7a6ab;
+      }
+    }
+    // Text section including price and ... for each home
+    &__generalInfo {
+      @include boxSize(100%, null, null, null, null);
+      li {
+        list-style: none;
+      }
+      .moneySection {
+        @include font($open-sans, 26px, 700, null, rgb(42, 42, 51));
+        margin-right: 10px;
+      }
+      .number {
+        @include font($open-sans, 14px, 600, null, rgb(42, 42, 21));
+        margin: 0 3px 0 0;
+      }
+      .unit {
+        @include font($open-sans, 14px, 500, null, rgb(60, 60, 60));
+        margin: 0 7px 0 0;
+        @media (max-width: 380px) {
+          margin: 0 2px 0 0;
+        }
+      }
+      .homeInfoSecondRow {
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        @include font($open-sans, 15px, 600, null, color_function(textColor));
+        @include for-phone-only() {
+          @include font(null, 14px, null, null, null);
+        }
+      }
+      .prequallified {
+        white-space: nowrap;
+      }
+      .r {
+        @include font($open-sans, 7px, 400, null, color_function(textColor));
+        border: color_function(textColor) 1px solid;
+        @include boxSize(
+          9px,
+          10px,
+          color_function(textColor),
+          color_function(myWhite),
+          50%
+        );
+        margin-bottom: 10px;
+        @include flex(center, center, null);
+      }
+      .line {
+        font-size: 10px;
+        border-right: rgb(190, 190, 190) 1px solid;
+        margin: 0px 6px 0 6px;
+        @include boxSize(1px, 20px, null, null, null);
+      }
+      .zestimatePrice {
+        @include font($open-sans, 13px, 400, null, color_function(textColor));
+      }
+      #rentOrSale {
+        @include font($open-sans, 13px, 600, null, color_function(textColor));
+        @include rentOrSale(12px);
+      }
+      .homeContainer__mainInfo {
+        white-space: nowrap;
+        overflow: hidden !important;
+        text-overflow: ellipsis;
+        padding: 4px 0;
+        @include flex(null, center, null);
+        flex-wrap: nowrap;
+      }
+      .homeContainer__addSec {
+        padding: 4px 0;
+        @include flex(null, center, null);
+      }
+      .homeContainer__rentOrSale {
+        padding: 4px 0;
+        @include flex(null, center, null);
+      }
+      .estPaymentText {
+        @include boxSize(100%, null, null, null, null);
+        @include font($open-sans, 14px, 700, null, color_function(textColor));
+        margin-top: 5px;
+        @include for-phone-only() {
+          line-height: 25px;
+        }
+      }
+      .lineText {
+        @include flex(null, center, null);
+      }
+      .zestimateText {
+        border-bottom: 1px dashed color_function(borderColorC);
+      }
+      #prequalifiedLink {
+        text-decoration: none;
+        @include font($open-sans, 14px, 700, null, color_function(mainblue));
+        #roundDollar {
+          @include boxSize(null, null, null, color_function(mainblue), 50%);
+          @include font($open-sans, 14px, 700, null, color_function(myWhite));
+          padding: 0 7px 2px 8px;
+          margin-right: 5px;
+        }
+      }
+    }
+  }
+  // A close cross shaped button on the page appeard when click on a home
+  #closeSign {
+    cursor: pointer;
+    @include font(null, 25px, 500, null, color_function(myWhite));
+    position: absolute;
+    right: 25px;
+    top: 15px;
+    @include for-tablet-landscape-up() {
+      right: 15px;
+    }
+    @include for-tablet-portrait-up() {
+      display: none;
+    }
+  }
+  display: none;
+}
+// sort container for mobile and tablet
+.sortContainer {
+  display: none;
+  @include for-tablet-portrait-up() {
+    @include flex(center, center, null);
+    transition: all 350ms ease-in;
+    left: -100%;
+    top: 0;
+    @include boxSize(100%, 100%, null, rgba(255, 255, 255, 0.75), null);
+    position: absolute;
+    z-index: 1000;
+    .sortOptionsContainer {
+      @include boxSize(598px, null, null, #fff, null);
+      position: relative;
+      .closeSort {
+        color: rgba(0, 0, 0, 0.6);
+        position: absolute;
+        top: 10px;
+        right: 10px;
+      }
+      @include for-phone-only() {
+        @include boxSize(100%, 100%, null, #fff, null);
+      }
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+      border: rgba(0, 0, 0, 0.3) 1px solid;
+      &__option {
+        list-style: none;
+        border-bottom: 1px solid #bbb;
+        padding: 10px;
+        @include font($open-sans, 15px, null, null, color_function(textColor));
+        @include boxSize(100%, 50px, null, null, null);
+        @include flex(null, center, null);
+        &--header {
+          @include flex(center, center, null);
+          @include font($open-sans, 20px, 700, null, #aaaaaa);
+          border-bottom: 1px solid #bbb;
+          padding: 10px;
+          @include boxSize(100%, 50px, null, null, null);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        &--sortActive {
+          background-color: #f3f3ee;
+        }
+      }
+    }
+  }
+}
+// ----------------FORM PAGE-----------------
+.formContainer {
+  padding: 70px 10% 0 10%;
+  @include boxSize(100%, auto, null, null, null);
+  @include font($open-sans, null, null, null, null);
+  overflow-x: hidden;
+  @media (max-width: 800px) {
+    padding: 70px 0 0 0;
+    @include flex(center, center, null);
+  }
+  &__header {
+    @include font($open-sans, 32px, 500, null, null);
+    @media (max-width: 800px) {
+      @include font(null, 29px, 500, null, null);
+    }
+    @media (max-width: 400px) {
+      @include font(null, 25px, 500, null, null);
+    }
+    margin: 22px 0;
+  }
+  .myForm {
+    @include boxSize(650px, 900px, null, null, null);
+    @include flex(space-evenly, null, column);
+    @media (max-width: 800px) {
+      @include boxSize(90%, null, null, null, null);
+    }
+    input,
+    select {
+      padding: 11px 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      width: 100%;
+      margin: 5px 0 0 0;
+    }
+    textarea {
+      border-radius: 2px;
+      border: 1px solid #ddd;
+      width: 100%;
+      margin: 5px 0 0 0;
+    }
+    @include customSelect(null, 100%, 100%, 0, 100%);
+    .select-selected {
+      background-color: color_function(myWhite);
+      border: #ddd 1px solid;
+      padding: 11px 10px;
+      border-radius: 4px;
+    }
+    .select-items {
+      max-height: 150px;
+    }
+    // Options container under the select box
+    .select-items div {
+      padding: 1px 0 1px 5px;
+      &:hover {
+        color: color_function(textColor);
+      }
+    }
+    .select-items div:hover,
+    .same-as-selected {
+      background-color: #ddd;
+    }
+    .select-selected:after {
+      position: absolute;
+      content: "";
+      top: 18px;
+    }
+    .select-selected.select-arrow-active:after {
+      top: 15px;
+    }
+    &__inputContainer {
+      label {
+        @include font($open-sans, 12px, null, null, null);
+      }
+    }
+    &__subtext {
+      @include font($open-sans, 11px, null, null, #666666);
+    }
+    // Drag and drop upload test
+    .dropFile {
+      padding: 15px 10px;
+      overflow: hidden;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      width: 100%;
+      margin: 5px 0 0 0;
+      @include font($open-sans, 12px, null, null, #666666);
+      @include flex(center, center, null);
+      &__galary {
+        position: relative;
+      }
+      img {
+        width: 150px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        vertical-align: middle;
+      }
+    }
+    .dropFileClose {
+      @include font(null, null, null, null, color_function(myWhite));
+      @include boxSize(20px, 20px, null, rgba(102, 102, 102, 0.6), null);
+      @include flex(center, center, null);
+      position: absolute;
+      z-index: 5000;
+      top: 5px;
+      right: 20px;
+    }
+    .dropFile.highlight {
+      background-color: #fafafa;
+    }
+    .button {
+      cursor: pointer;
+      @include font($open-sans, null, null, null, color_function(mainblue));
+    }
+    #fileElem {
+      display: none;
+    }
+    .submitBut {
+      cursor: not-allowed;
+      @include boxSize(
+        190px,
+        37.6px,
+        color_function(myWhite),
+        color_function(borderColorC),
+        null
+      );
+    }
+  }
+}
+// ----------------SHARE FORM ON RESULT.HTML-----------------
+.shareHomeContainer {
+  @include boxSize(100%, 100%, null, rgba(255, 255, 255, 0.75), null);
+  transition: all 350ms ease-in;
+  @include flex(center, center, null);
+  position: absolute;
+  left: -100%;
+  top: 0;
+  z-index: 10;
+  &__formWrapper {
+    @include boxSize(auto, null, null, color_function(myWhite), null);
+    position: relative;
+    @include for-phone-only() {
+      @include boxSize(100%, 100%, null, null, null);
+    }
+    .shareCloseSign {
+      position: absolute;
+      cursor: pointer;
+      color: rgba($color: #000000, $alpha: 0.6);
+      right: 10px;
+      top: 10px;
+    }
+  }
+  .shareForm {
+    @include boxSize(403px, null, null, color_function(myWhite), 2px);
+    border: rgb(167, 166, 171) 1px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.35);
+    height: 460px;
+    padding: 20px 20px;
+    @include for-phone-only() {
+      @include boxSize(100%, 100%, null, null, null);
+    }
+    fieldset {
+      border: none;
+      @include flex(null, null, column);
+      @include boxSize(100%, null, null, null, null);
+      legend {
+        @include font($open-sans, 28px, 700, null, color_function(textColor));
+        margin: 0 0 15px 0;
+      }
+      label {
+        @include font($open-sans, 15px, 700, null, color_function(textColor));
+        padding: 0 0 3px 0;
+      }
+    }
+    &__inputContainer {
+      @include flex(null, null, column);
+      @include boxSize(100%, null, null, null, null);
+      margin: 0 0 15px 0;
+      ::-webkit-input-placeholder {
+        /* Chrome/Opera/Safari */
+        @include font($open-sans, 14px, null, null, null);
+      }
+      ::-moz-placeholder {
+        /* Firefox 19+ */
+        @include font($open-sans, 14px, null, null, null);
+      }
+      :-ms-input-placeholder {
+        /* IE 10+ */
+        @include font($open-sans, 14px, null, null, null);
+      }
+      :-moz-placeholder {
+        /* Firefox 18- */
+        @include font($open-sans, 14px, null, null, null);
+      }
+      input {
+        padding: 4px 6px 2px 6px;
+      }
+    }
+    &__subInputText {
+      @include font($open-sans, 12px, null, null, null);
+    }
+    .shareFormTextArea {
+      @include font($open-sans, 15px, null, null, color_function(textColor));
+      padding: 4px 6px 2px 6px;
+    }
+    .shareFormSubmitBut {
+      @include boxSize(
+        99.4px,
+        36.4px,
+        color_function(myWhite),
+        color_function(mainblue),
+        4px
+      );
+      border: none;
+      cursor: pointer;
+      @include for-phone-only() {
+        @include boxSize(100%, null, null, null, null);
+      }
+    }
+  }
+}
+
+// ----------------PAGES-----------------
+
+.mainContent {
+  padding: 70px 0 0 0;
+  @media (max-width: 800px) {
+    padding: 0 0 0 0;
+  }
+  @include boxSize(100%, null, null, #f9f9fb, null);
+  &__banner {
+    @include boxSize(100%, null, null, #f9f9fb, null);
+    padding: 70px 0;
+    &--bannerPic {
+      padding: 0 0;
+      @include flex(center, center, null);
+      background-position: center;
+      background-repeat: no-repeat;
+      min-height: 60vh;
+      color: #fff;
+    }
+  }
+  // header section
+  &__headerContainer {
+    @include flex(space-between, center, column);
+    @include boxSize(100%, 162px, null, null, null);
+  }
+  .bannerHeader {
+    &--whiteHeader {
+      color: color_function(myWhite);
+    }
+    padding: 0 10px;
+    text-align: center;
+    @include font($open-sans, 55px, null, null, color_function(textColor));
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, center, null);
+    @include for-tablet-landscape-up() {
+      @include font(null, 50px, null, null, null);
+    }
+    @media (max-width: 800px) {
+      margin: 30px 0 0 0;
+    }
+    @include for-phone-only() {
+      @include font(null, 40px, null, null, null);
+    }
+    @media (max-width: 420px) {
+      @include font(null, 35px, null, null, null);
+    }
+    @media (max-width: 420px) {
+      @include font(null, 30px, null, null, null);
+    }
+  }
+  .subBannerTxt {
+    @include font($open-sans, 22px, null, null, null);
+    text-align: center;
+    @include for-phone-only() {
+      padding: 0 15px;
+      @include font(null, 20px, null, null, null);
+    }
+  }
+  .bannerYellowLine {
+    &--hide {
+      display: none;
+    }
+    @include boxSize(200px, 5px, null, #ffd237, null);
+  }
+  &__picSection {
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, center, null);
+    padding: 30px 0;
+  }
+  &__picSectionHeaderContainer {
+    @include boxSize(1227.2px, null, null, null, null);
+    padding: 0 10px;
+    margin: 0 0 10px 0;
+    @include font(null, null, null, null, color_function(textColor));
+    @media (max-width: 1216px) {
+      @include boxSize(100%, null, null, null, null);
+    }
+    .picsHeader {
+      @include for-tablet-portrait-up() {
+        @include font(null, 25px, null, null, null);
+      }
+      @include for-phone-only() {
+        @include font(null, 22px, null, null, null);
+      }
+    }
+  }
+  &__picItemsContainer {
+    @include boxSize(80%, null, null, null, null);
+    @include flex(center, center, null);
+    min-width: 1216px;
+    @media (max-width: 1216px) {
+      min-width: auto;
+      @include boxSize(100%, null, null, null, null);
+    }
+    @media (max-width: 1024px) {
+      overflow: hidden;
+      position: relative;
+      min-height: 348px;
+    }
+  }
+  &__itemsWrapper {
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, center, null);
+    @media (max-width: 1024px) {
+      position: absolute;
+      @include flex(flex-start, flex-start, null);
+      flex-wrap: nowrap;
+      right: 0%;
+    }
+  }
+  .singleItemWrapper {
+    @include boxSize(33.33%, null, null, null, null);
+    padding: 0 10px;
+    @include flex(center, center, null);
+    cursor: pointer;
+    @media (max-width: 1024px) {
+      @include boxSize(408px, null, null, null, null);
+      min-width: 45%;
+    }
+    @media (max-width: 530px) {
+      padding: 0 5px;
+      min-width: 95%;
+    }
+    &__imageContainer {
+      @include boxSize(100%, 186px, null, null, null);
+      overflow: hidden;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 100% auto;
+    }
+    &__infoContainer {
+      padding: 26px;
+      @include boxSize(100%, 162px, null, color_function(myWhite), null);
+      display: -webkit-box;
+      -webkit-line-clamp: 3;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+    &__firstLinetxt {
+      @include font($open-sans, 11px, 600, null, #54545a);
+      margin: 0 0 5px 0;
+      text-transform: uppercase;
+      &:hover {
+        color: color_function(mainblue);
+      }
+    }
+    &__secondLinetxt {
+      overflow: hidden;
+      @include font($open-sans, 24px, 600, null, color_function(textColor));
+      @include for-tablet-portrait-up() {
+        @include font(null, 20px, null, null, null);
+      }
+      @include for-phone-only() {
+        @include font(null, 18px, null, null, null);
+      }
+      &:hover {
+        color: color_function(mainblue);
+      }
+    }
+  }
+}
+
+// ----------------SUBPAGES-----------------
+.mainSubPageContainer {
+  padding: 70px 0 0 0;
+  @include font($open-sans, null, null, null, color_function(textColor));
+  @media (max-width: 800px) {
+    padding: 50px 0 0 0;
+  }
+  @include boxSize(100%, null, null, color_function(myWhite), null);
+  @include flex(center, center, null);
+  &__middleContainer {
+    @include boxSize(75%, null, null, color_function(myWhite), null);
+    @include for-phone-only() {
+      @include boxSize(85%, null, null, null, null);
+    }
+    @media (max-width: 420px) {
+      @include boxSize(90%, null, null, null, null);
+    }
+  }
+  &__mainPic {
+    @include boxSize(100%, null, null, null, null);
+    @include flex(center, center, null);
+    margin: 0 0 25px 0;
+    .mainImage {
+      @include boxSize(60%, null, null, null, null);
+      @include for-tablet-portrait-up() {
+        @include boxSize(80%, null, null, null, null);
+      }
+      @include for-phone-only() {
+        @include boxSize(100%, null, null, null, null);
+      }
+    }
+  }
+  .mainHeader {
+    @include font(null, 40px, null, null, null);
+    @include for-tablet-landscape-up() {
+      @include font(null, 35px, null, null, null);
+    }
+    @media (max-width: 800px) {
+      @include font(null, 30px, null, null, null);
+    }
+    @include for-phone-only() {
+      @include font(null, 25px, null, null, null);
+    }
+    @media (max-width: 480px) {
+      @include font(null, 22px, null, null, null);
+    }
+    @media (max-width: 420px) {
+      @include font(null, 21px, null, null, null);
+    }
+  }
+  .pageName {
+    @include font(null, 13.5px, null, null, #54545a);
+    margin: 25px 0 0 0;
+  }
+  .subHeader {
+    @include font(null, 24px, null, null, #66686b);
+    margin: 0 0 30px 0;
+    @include for-tablet-landscape-up() {
+      @include font(null, 21px, null, null, null);
+    }
+    @media (max-width: 800px) {
+      @include font(null, 19px, null, null, null);
+    }
+  }
+  .paraInfo {
+    margin: 0 0 20px 0;
+    @include font(null, 16px, null, null, null);
+    @media (max-width: 800px) {
+      @include font(null, 15px, null, null, null);
+    }
+  }
+}

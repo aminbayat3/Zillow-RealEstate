@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+      integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Foreclosure</title>
+  </head>
+  <body onload="getImg()">
+    <nav>
+      <div class="indexPhoneNav">
+        <i
+          class="fa fa-bars indexPhoneNav__mobileMenueIcon"
+          onclick="ShowMobileMenue('#guidePhoneNavMenue')"
+          style="font-size: 25px; color: #fff;"
+        ></i>
+        <img
+          class="indexPhoneNav__mobileMenueLogo"
+          src="../../images/mobile_logo.png"
+          alt=""
+        />
+      </div>
+      <div class="phoneNavMenue" id="guidePhoneNavMenue">
+        <div class="phoneNavMenue__header">
+          <i
+            class="fas fa-times phoneNavMenue__closeIcon"
+            onclick="HideMobileMenue('#guidePhoneNavMenue')"
+            style="font-size: 25px; color:#006aff ;"
+          ></i>
+          <a href="index.html"
+            ><img
+              class="phoneNavMenue__logo"
+              src="../../images/logo.png"
+              alt="logo"
+          /></a>
+        </div>
+        <div class="phoneNavMenue__body">
+          <div class="phoneNavMenue__ul">
+            <div class="phoneNavMenue__li">
+              <a
+                href="../../index.html"
+                class="phoneNavMenue__liText phoneNavMenue__liText--active phoneNavMenue__liText--extraMr"
+                >Homepage</a
+              >
+            </div>
+            <div class="phoneNavMenue__li">
+              <a href="../../pages/form/form.html" class="phoneNavMenue__liText"
+                >Contact us</a
+              >
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                href="../../pages/BuyersGuide/buyersGuide.html"
+                class="phoneNavMenue__liText"
+                >Buy</a
+              ><i
+                onclick="mobileMenuShowDropDown(this,'#indexPhoneMenueBuy')"
+                class="fa fa-angle-down phoneNavMenue__liArrow"
+                style="font-size:24px"
+              ></i>
+            </div>
+            <div class="phoneNavMenue__dropDown" id="indexPhoneMenueBuy">
+              <div class="phoneNavMenue__dropDownUl">
+                <a
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--header"
+                  >Homes for Sale</a
+                >
+                <a
+                  onclick="DropDownInputAssign('Potrero', 'sale')"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Potrero homes For sale</a
+                >
+                <a
+                  onclick="DropDownInputAssign('Potrero', 'sale')"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Potrero homes For sale by owner</a
+                >
+                <a
+                  href="#"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--header"
+                  >Resources</a
+                >
+                <a
+                  href="../../pages/BuyersGuide/buyersGuide.html"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Buyer's Guide</a
+                >
+                <a
+                  href="../../pages/foreclosureCenter/foreclosureCenter.html"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Foreclosure center</a
+                >
+              </div>
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                href="../../pages/rentersGuide/rentersGuide.html"
+                class="phoneNavMenue__liText"
+                >Rent</a
+              ><i
+                onclick="mobileMenuShowDropDown(this,'#indexPhoneMenueRent')"
+                class="fa fa-angle-down phoneNavMenue__liArrow"
+                style="font-size:24px"
+              ></i>
+            </div>
+            <div class="phoneNavMenue__dropDown" id="indexPhoneMenueRent">
+              <div class="phoneNavMenue__dropDownUl">
+                <a
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--header"
+                  >Search for Rentals</a
+                >
+                <a
+                  onclick="DropDownInputAssign('Potrero', 'rent')"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Potrero homes for rent</a
+                >
+                <a
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--header"
+                  >I'm a Rental Manager</a
+                >
+                <a
+                  href="../../pages/rentalResourceCenter/rentalResourceCenter.html"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >rental resource center</a
+                >
+                <a
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--header"
+                  >I'm a Renter</a
+                >
+                <a
+                  href="../../pages/rentersGuide/rentersGuide.html"
+                  class="phoneNavMenue__dropDownLi phoneNavMenue__dropDownLi--option"
+                  >Renters Guide</a
+                >
+              </div>
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                class="phoneNavMenue__liText"
+                href="../../pages/foreclosureCenter/foreclosureCenter.html"
+                >Sell</a
+              >
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                class="phoneNavMenue__liText"
+                href="../../pages/rentalResourceCenter/rentalResourceCenter.html"
+                >Home loans</a
+              >
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                class="phoneNavMenue__liText"
+                href="../../pages/foreclosureCenter/foreclosureCenterSubPage/foreclosureCenterSubPage.html"
+                >Agent finder</a
+              >
+            </div>
+            <div class="phoneNavMenue__li">
+              <a
+                class="phoneNavMenue__liText phoneNavMenue__liText--active"
+                href="../../pages/advertise/advertise.html"
+                >Advertise</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="topnav">
+        <div class="topnav__section topnav__section--left">
+          <ul class="mainNavUl">
+            <li class="mainNavUl__list" id="buyNavBut">
+              <a href="../../pages/BuyersGuide/buyersGuide.html">Buy</a>
+            </li>
+            <li class="mainNavUl__list" id="rentNavBut">
+              <a href="../../pages/rentersGuide/rentersGuide.html">Rent</a>
+            </li>
+            <li class="mainNavUl__list" id="sellNavBut">
+              <a href="../../pages/foreclosureCenter/foreclosureCenter.html"
+                >Sell</a
+              >
+            </li>
+            <li class="mainNavUl__list" id="homeLoansNavBut">
+              <a
+                href="../../pages/rentalResourceCenter/rentalResourceCenter.html"
+                >Home Loans</a
+              >
+            </li>
+            <li class="mainNavUl__list" id="agentFinderNavBut">
+              <a
+                href="../../pages/foreclosureCenter/foreclosureCenterSubPage/foreclosureCenterSubPage.html"
+                >Agent Finder</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="topnav__middle topnav__middle--left">
+          <a href="../../index.html" class="topnav__link"
+            ><img
+              class="topnav__img"
+              src="../../images/logo.png"
+              alt="Home logo"
+          /></a>
+        </div>
+        <div class="topnav__section topnav__section--left">
+          <ul class="mainNavUl">
+            <li class="mainNavUl__list mainNavUl__list--hide">
+              <a href="../../pages/zillowRentalManager/zillowRentalManager.html"
+                >List your rental</a
+              >
+            </li>
+            <li class="mainNavUl__list">
+              <a href="../../pages/advertise/advertise.html">Advertise</a>
+            </li>
+            <li class="mainNavUl__list" id="myZillowNavBut">
+              <a class="mainNavUl__list--mr" href="../../pages/form/form.html"
+                >Contact us</a
+              >
+            </li>
+            <li class="mainNavUl__list mainNavUl__list--hide">
+              <a href="../../index.html" style="color: #006aff;">HomePage</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Buy DropDown -->
+      <div class="navDropDown" id="buyNavDropDown">
+        <div class="dropdownBox">
+          <ul class="dropdownBox__mainNavDropDown">
+            <li><h4>Homes for Sale</h4></li>
+            <li
+              onclick="DropDownInputAssign('Potrero', 'sale')"
+              style="cursor: pointer;"
+            >
+              <a>Potrero Homes for sale</a>
+            </li>
+            <li
+              onclick="DropDownInputAssign('Potrero', 'sale')"
+              style="cursor: pointer;"
+            >
+              <a>Potrero For sale by owner</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdownBox dropdownBox__nonBorder">
+          <ul class="dropdownBox__mainNavDropDown">
+            <li><h4>Resources</h4></li>
+            <li>
+              <a href="../../pages/BuyersGuide/buyersGuide.html"
+                >Buyers guide</a
+              >
+            </li>
+            <li>
+              <a href="../../pages/foreclosureCenter/foreclosureCenter.html"
+                >Foreclosure center</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- Rent DropDown -->
+      <div class="navDropDown" id="rentNavDropDown">
+        <div class="dropdownBox">
+          <ul class="dropdownBox__mainNavDropDown">
+            <li><h4>Search for Rentals</h4></li>
+            <li
+              onclick="DropDownInputAssign('Potrero', 'rent')"
+              style="cursor: pointer;"
+            >
+              <a>Potrero homes for rent</a>
+            </li>
+          </ul>
+        </div>
+        <div class="dropdownBox">
+          <ul class="dropdownBox__mainNavDropDown">
+            <li><h4>I'm a rental manager</h4></li>
+            <li>
+              <a href="../../pages/zillowRentalManager/zillowRentalManager.html"
+                >Zillow Rental Manager</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="dropdownBox dropdownBox__nonBorder">
+          <ul class="dropdownBox__mainNavDropDown">
+            <li><h4>I'm a Renter</h4></li>
+            <li>
+              <a href="../../pages/rentersGuide/rentersGuide.html">Renters Guide</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="mainContent">
+      <div
+        class="mainContent__banner mainContent__banner--bannerPic"
+        style="background-image: url('../../images/zillowRentalManagerBanner.jpg');
+         background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('../../images/zillowRentalManagerBanner.jpg');
+        background-position:center;"
+      >
+        <div class="mainContent__headerContainer">
+          <h1 class="bannerHeader bannerHeader--whiteHeader">
+            The simplest way to manage your rental
+          </h1>
+          <div class="bannerYellowLine bannerYellowLine--hide"></div>
+        </div>
+      </div>
+      <div class="mainContent__picSection">
+        <div class="mainContent__picSectionHeaderContainer">
+          <h1 class="picsHeader">Renting 101: The Basics</h1>
+        </div>
+        <div class="mainContent__picItemsContainer">
+          <div class="mainContent__itemsWrapper">
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager1.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Renting 101: The Basics
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Figuring Out What You Really Want and Need
+                </div>
+              </div>
+            </div>
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager2.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Renting 101: The Basics
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Setting a Realistic Rental Budget
+                </div>
+              </div>
+            </div>
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager3.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Renting 101: The Basics
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Living With a Roommate or Going Solo: Making It Work
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mainContent__picSection">
+        <div class="mainContent__picSectionHeaderContainer">
+          <h1 class="picsHeader">Finding a Great Rental</h1>
+        </div>
+        <div class="mainContent__picItemsContainer">
+          <div class="mainContent__itemsWrapper">
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager4.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Finding a Great Rental
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Starting Your Search With the Right Tools & Tips
+                </div>
+              </div>
+            </div>
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager5.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Finding a Great Rental
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Sniffing Out a Rental Where Pets Are Welcome
+                </div>
+              </div>
+            </div>
+            <div class="singleItemWrapper" onclick="changePage()">
+              <div
+                class="singleItemWrapper__imageContainer"
+                style="background-image: url('../../images/rentalManager6.jpg');"
+              ></div>
+              <div class="singleItemWrapper__infoContainer">
+                <div class="singleItemWrapper__firstLinetxt">
+                  Finding a Great Rental
+                </div>
+                <div class="singleItemWrapper__secondLinetxt">
+                  Finding a Budget-Friendly Place as Rents Soar
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="footerInfo">
+        <div class="footerInfo__text">
+          <span class="footerInfo__txtSpan"
+            >Zillow Group is committed to ensuring digital accessibility for
+            individuals with disabilities. We are continuously working to
+            improve the accessibility of our web experience for everyone, and we
+            welcome feedback and accommodation requests. If you wish to report
+            an issue or seek an accommodation, please <br />
+            <a class="footerInfo--linkStyle" href="">contact us</a>.</span
+          >
+        </div>
+        <div class="footerInfo__logos">
+          <img src="../../images/logo.png" alt="Home" />
+          <span>Follow us: </span><a href="https://www.facebook.com/Zillow" class="fab fa-facebook-f"></a
+          ><a href="https://twitter.com/zillow" class="fab fa-twitter"></a
+          ><span>© 2006-2019 Zillow </span><i class="fa fa-home"></i>
+        </div>
+        <div class="footerInfo__imageContainer">
+          <img
+            class="footerInfo__image"
+            src="../../images/footer.png"
+            alt="cartoon houses pic"
+          />
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="./zillowRentalManager.js"></script>
+</html>

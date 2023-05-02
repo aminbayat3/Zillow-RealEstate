@@ -1,0 +1,4387 @@
+{
+  "value": [
+    {
+      "ListingId": "5af601c3fc76173b348291ea",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1746,
+      "AssociationFee": 185,
+      "ListPrice": 518538,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 5211,
+      "YearBuilt": 1985,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 158,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Electric", "Wood"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Expedita aperiam placeat eligendi aspernatur sit. Eius sit tenetur sequi sit et. Ullam ullam at fugit.\n \r\tRepudiandae explicabo iusto eaque dolor suscipit reprehenderit ut. Sequi est perspiciatis labore cumque tempore quod id eos. Ratione quae rerum vitae ut debitis. Et eligendi et ullam quo odit corporis omnis reprehenderit. Doloribus ea sint est aliquid eum et.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "3536 17th St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-12T23:39:16.548Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291e5",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 503,
+      "AssociationFee": 373,
+      "ListPrice": 442894,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 3095,
+      "YearBuilt": 1984,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 194,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Quis voluptatem incidunt eius et excepturi neque est. Officiis ipsa quae rerum ullam est libero. Facilis suscipit voluptates facere sed officia facilis in. Aut labore eveniet eveniet quidem est esse. Necessitatibus quibusdam rerum voluptatem ullam accusamus qui voluptas.\n \r\tSunt est quos libero repudiandae veniam nostrum quaerat. Enim dolore fugiat ab aliquid corrupti in sit. Corrupti eos ad hic nisi cupiditate dolores. Velit at quos est architecto. Rerum eaque rerum qui quia ratione.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        }
+      ],
+      "UnparsedAddress": "474 Arkansas St, San Francisco, CA 94107",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-11T15:00:14.586Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291d8",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 826,
+      "AssociationFee": 260,
+      "ListPrice": 396730,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 2139,
+      "YearBuilt": 2011,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 70,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Deserunt et praesentium et quo aliquam voluptas quia. Explicabo quos architecto pariatur est. Asperiores delectus nesciunt maiores deserunt. Quis ut sunt laboriosam fugiat earum provident adipisci. Quo dolorem quos fugiat sed rerum omnis distinctio.\n \r\tQui accusantium maxime doloribus quidem. Nisi omnis molestiae magnam rerum tempore nemo aut quisquam. Cum est dolorem ut et vero cum. Reprehenderit facilis laboriosam eum aut dolorem ab.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        }
+      ],
+      "UnparsedAddress": "37 Topaz Way, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-01T09:33:26.015Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291de",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1062,
+      "AssociationFee": 328,
+      "ListPrice": 887218,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 7595,
+      "YearBuilt": 1980,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 104,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Ea praesentium amet adipisci non inventore. Natus amet sapiente repudiandae minus molestiae. Et est fugiat repellendus. Qui dolore rem labore. Ipsum unde sapiente facilis ut.\n \r\tFuga quia voluptas eum. Earum sit beatae consequatur enim in assumenda. Et id ex eligendi quo. Placeat adipisci consequatur aspernatur reiciendis dicta totam. Et consequatur amet sed et soluta hic officiis.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 4,
+      "Media": [],
+      "UnparsedAddress": "1944 23rd St, San Francisco, CA 94107",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-19T02:12:02.450Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291f0",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 744,
+      "AssociationFee": 93,
+      "ListPrice": 385198,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4773,
+      "YearBuilt": 1971,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 193,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Soluta qui recusandae fuga eos reprehenderit recusandae nisi. Inventore consequuntur saepe quia vel aut laboriosam repellat iure. Eius a veritatis ut molestiae nesciunt sed aperiam aut. Recusandae nostrum et illum vero inventore reiciendis. Odit ipsa ut optio.\n \r\tOfficiis illo quis recusandae ipsa harum voluptas deserunt id. Sunt voluptatem provident dicta. Incidunt quas nisi autem dignissimos.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        }
+      ],
+      "UnparsedAddress": "360 W Portal Ave, San Francisco, CA 94127",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-01T09:23:22.762Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829209",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1156,
+      "AssociationFee": 333,
+      "ListPrice": 818573,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6010,
+      "YearBuilt": 1998,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 334,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Facere eos sit molestiae. Accusamus est iure iste non in. Nostrum veniam delectus quo sit veniam.\n \r\tQuibusdam explicabo delectus cumque. Omnis veniam iure dolore explicabo perspiciatis laboriosam saepe. Eaque sapiente quibusdam dolorem quis beatae in qui alias.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        }
+      ],
+      "UnparsedAddress": "San Francisco, CA",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-27T01:16:28.816Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291db",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1120,
+      "AssociationFee": 28,
+      "ListPrice": 611050,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 5016,
+      "YearBuilt": 2011,
+      "StandardStatus": "Active",
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 50,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump", "Boiler", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Repellat dignissimos est necessitatibus alias inventore consequuntur. Id enim dolores reprehenderit omnis quos. Cupiditate laboriosam consequatur voluptatum fugit.\n \r\tFugit quia recusandae deleniti illum nisi illo. Rerum corporis enim ducimus delectus aliquam nostrum. Sequi tenetur aliquam voluptate. Repellat amet soluta occaecati magnam. Et fugit excepturi corrupti.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 4,
+      "Media": [],
+      "UnparsedAddress": "1936 Alemany Blvd, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-01T07:25:32.528Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291ff",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1511,
+      "AssociationFee": 403,
+      "ListPrice": 333527,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 476,
+      "YearBuilt": 1979,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 310,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Veritatis voluptatem vitae totam dolor. Sint aspernatur asperiores beatae. Dolor suscipit voluptatem suscipit et et itaque omnis architecto.\n \r\tEx voluptas soluta nisi. Aut magni rerum eius. Perspiciatis ea eum blanditiis quae qui laborum harum. Vel nulla delectus corrupti aut veniam eos.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        }
+      ],
+      "UnparsedAddress": "1848 Wawona St, San Francisco, CA 94116",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-06T18:04:46.219Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829248",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 1586,
+      "AssociationFee": 460,
+      "ListPrice": 612283,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 8452,
+      "YearBuilt": 1948,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 236,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Wood", "Heat Pump", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Est et repudiandae voluptatem. Enim vero magni temporibus necessitatibus aliquid. Optio quaerat voluptatem dolores. Aut id numquam corrupti quasi in consequatur voluptate minus. Impedit laborum cumque et voluptatem a iste omnis.\n \r\tMinima deserunt minima ut explicabo vero necessitatibus magnam. Dolorem voluptate repellat expedita omnis ut impedit aliquid. Officia sapiente ipsum praesentium ducimus fugiat incidunt. Suscipit ut molestiae quibusdam in. Dicta temporibus qui consequatur sapiente sapiente corrupti voluptas ut.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        }
+      ],
+      "UnparsedAddress": "905 Missouri St, San Francisco, CA 94107",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-15T16:06:29.329Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482923e",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 969,
+      "AssociationFee": 146,
+      "ListPrice": 469112,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5172,
+      "YearBuilt": 1968,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 157,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Voluptas assumenda at voluptate error non. Sed saepe nisi ut ea. Voluptatem reprehenderit atque impedit sed enim. Fugiat quia deserunt ea incidunt. Est dolores cum porro enim sit.\n \r\tAtque temporibus nam ipsa quam. Repellat tempora officiis facere molestiae aut ut commodi facilis. Omnis ullam esse dolorem explicabo. Itaque vel id molestiae.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        }
+      ],
+      "UnparsedAddress": "148 Helena St, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-30T05:42:38.172Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829202",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 1597,
+      "AssociationFee": 239,
+      "ListPrice": 122435,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 2319,
+      "YearBuilt": 1949,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 359,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Heat Pump", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Dolores quia non modi omnis perspiciatis est qui. Ipsam voluptates occaecati maxime corporis in. Vel enim fuga voluptatibus cupiditate dolorem sit velit.\n \r\tQuos et nam eligendi. Reiciendis beatae dolores suscipit eligendi error minus dolor minima. Sunt veniam exercitationem asperiores. Fugiat odit omnis animi. Quo dolor voluptatem dicta sunt sunt et aperiam.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [],
+      "UnparsedAddress": "1100 Eucalyptus Dr, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-26T20:59:35.393Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482922d",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 592,
+      "AssociationFee": 234,
+      "ListPrice": 500664,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4345,
+      "YearBuilt": 2008,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 150,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Aperiam sint quidem vel qui dolorem nihil dolorem. Nam voluptatem aut voluptas eum. Natus autem non accusamus hic ducimus eum. Voluptas sed ut rem explicabo quam. Debitis aut dolores hic nostrum ad aut illo.\n \r\tDistinctio ut rerum quisquam quasi qui deleniti laboriosam et. Blanditiis laborum fugit vel ullam voluptas. Dolor et similique voluptatibus sint quibusdam.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        }
+      ],
+      "UnparsedAddress": "1465 Carroll Ave, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-13T09:08:28.589Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829221",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 522,
+      "AssociationFee": 425,
+      "ListPrice": 607831,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 2578,
+      "YearBuilt": 1983,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 140,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Facere praesentium qui temporibus enim ullam. Inventore architecto qui soluta repudiandae et quas. Reiciendis dignissimos consequatur aut id repellat quae. Ullam molestiae ipsam est. Excepturi et expedita vel.\n \r\tTotam at ut atque ipsum suscipit eligendi laudantium asperiores. Omnis ipsam asperiores placeat. Aut in cupiditate non non voluptatem.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        }
+      ],
+      "UnparsedAddress": "2640 Newhall St, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-17T16:53:08.525Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348291f3",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1084,
+      "AssociationFee": 413,
+      "ListPrice": 518354,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6430,
+      "YearBuilt": 1978,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 174,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Heat Pump", "Forced Air", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Reprehenderit mollitia accusamus vel totam deserunt quo rerum. Ipsum sapiente excepturi dolores numquam placeat. Et eaque occaecati iure eum fuga iusto fugiat. Hic occaecati eaque laudantium et praesentium praesentium. Illum molestias aliquid nam ipsam et omnis.\n \r\tCum quia quam pariatur nostrum. Autem veniam sed aut atque. Consectetur doloribus non enim in quia quisquam eos.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [],
+      "UnparsedAddress": "2326 Judah St, San Francisco, CA 94122",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-10T16:49:53.331Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829254",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1071,
+      "AssociationFee": 349,
+      "ListPrice": 147431,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 6746,
+      "YearBuilt": 1960,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 192,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Officia expedita qui eligendi dolorem at recusandae. Eaque quia impedit architecto eos ut deleniti molestias. Quibusdam itaque vel necessitatibus dolorem nobis repellendus. Quam et et praesentium non ut sed.\n \r\tDolores deserunt ipsam non amet ut possimus. Reiciendis qui cumque sint. Eius est enim ut. Rerum dolor exercitationem quo qui quibusdam omnis eligendi consectetur. Ut voluptates assumenda cumque.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 1,
+      "Media": [],
+      "UnparsedAddress": "266 Bayshore Blvd, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-06-04T05:19:20.766Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829236",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 817,
+      "AssociationFee": 97,
+      "ListPrice": 257119,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 8678,
+      "YearBuilt": 1997,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 128,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Electric", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Dolores ipsam aut recusandae ab inventore error minima quisquam. Dignissimos quis nesciunt quo cumque. Amet consequatur neque dolore sed rerum cumque. Officia ab dicta ad nihil.\n \r\tSed qui et similique labore cumque consequatur rerum. Nesciunt est voluptas id. Eligendi nihil sit eius placeat natus dolorem atque.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        }
+      ],
+      "UnparsedAddress": "218 Monterey Blvd, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-08T16:46:03.511Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829251",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 724,
+      "AssociationFee": 39,
+      "ListPrice": 682655,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 5226,
+      "YearBuilt": 1975,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 210,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Boiler", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Ut accusantium non consequatur quo necessitatibus perferendis rerum fugiat. Aut pariatur pariatur temporibus. Odio quo tenetur est sed. Ea sapiente provident quia. Voluptas cum ex non sapiente necessitatibus porro.\n \r\tTemporibus pariatur autem quasi eveniet ut. Voluptas culpa consequatur officia quos minus consequuntur. Et itaque ad natus nisi corrupti maiores. Adipisci quo minus neque officia provident.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        }
+      ],
+      "UnparsedAddress": "1375 Dolores St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-04T15:57:36.003Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829227",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 1373,
+      "AssociationFee": 404,
+      "ListPrice": 407821,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4908,
+      "YearBuilt": 1948,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 222,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump", "Electric", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Provident sequi quae nemo consequuntur illum et natus. Repudiandae et eum laudantium totam nam ratione. Aperiam harum sit quaerat omnis. Ullam ipsam dolorem rem nemo.\n \r\tIncidunt perspiciatis eveniet porro et mollitia. Rerum odit nam nihil excepturi qui aut error. Ut aut aut qui omnis quae repudiandae nam illum. Omnis omnis eos illo. Ad repellat adipisci ea.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        }
+      ],
+      "UnparsedAddress": "1209 Douglass St, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-14T22:30:17.494Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829259",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1777,
+      "AssociationFee": 35,
+      "ListPrice": 344229,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6099,
+      "YearBuilt": 2011,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 158,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Aut laudantium tenetur officia omnis maiores asperiores. Eos quo rerum esse dolorem. Dolorum nisi officiis totam inventore delectus repellendus.\n \r\tUnde quo fugiat tempora reiciendis commodi sunt sit. Quo pariatur enim est dolor magni aliquid harum reprehenderit. Ea iste qui velit ipsum cum. Ea omnis reprehenderit praesentium soluta sit aut.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        }
+      ],
+      "UnparsedAddress": "1274 Vermont St, San Francisco, CA 94110",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-15T17:05:39.446Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829215",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 513,
+      "AssociationFee": 112,
+      "ListPrice": 41113,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 2152,
+      "YearBuilt": 2010,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 93,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Illo quam quod maiores illum sunt non explicabo consequatur. Corrupti autem quod doloribus aut qui. Ut nihil ut et.\n \r\tVoluptas unde architecto fugiat fugiat distinctio. Numquam repellendus nihil porro. Iusto nobis molestiae porro labore neque laudantium reprehenderit maiores. Quas est et pariatur. Facilis ut quam nisi.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        }
+      ],
+      "UnparsedAddress": "84 Ashton Ave, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-05T03:07:44.574Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829284",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1604,
+      "AssociationFee": 47,
+      "ListPrice": 465935,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 698,
+      "YearBuilt": 2013,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 95,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Nulla fuga nisi necessitatibus sed velit consectetur possimus aut. Tempora rerum minus a. Cum dolores dolor corrupti molestiae voluptas possimus quaerat voluptatem. Omnis repellat voluptatem porro animi pariatur non recusandae. Sunt tempora sequi molestiae voluptate officiis cum dolores.\n \r\tEst quia non unde. Molestiae rem laudantium aut. Consequatur excepturi magnam quos ea quia tempore aut ullam. Explicabo sed vero voluptatem amet fugiat illo iste. Voluptate consequatur tempora dolores hic quas et.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        }
+      ],
+      "UnparsedAddress": "901 Valencia St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-11T16:25:18.616Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829266",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 1234,
+      "AssociationFee": 143,
+      "ListPrice": 905251,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 8474,
+      "YearBuilt": 1948,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 24,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Heat Pump", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Totam ut enim omnis sequi. Qui laborum voluptatibus dolorem sit. Accusamus sed rerum et perspiciatis maxime perspiciatis aperiam blanditiis.\n \r\tVoluptates minus aspernatur et tenetur soluta tempora. Perferendis doloribus sed unde et ipsum amet dicta. Vel ipsam repellendus ullam. Autem qui quia quidem aut.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "2200 31st Ave, San Francisco, CA 94116",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-09T12:28:59.632Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829270",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1215,
+      "AssociationFee": 187,
+      "ListPrice": 792704,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 1728,
+      "YearBuilt": 2002,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 354,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Reiciendis et voluptas beatae. Adipisci vero rem ullam. Deserunt veniam ducimus minus tempora. Quia optio atque qui. Ducimus sint quae veniam sunt ab et reprehenderit.\n \r\tMinima ut ipsum ullam quo facere quibusdam est ut. In placeat quia est. Sit quas et deserunt quia iure et officia.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        }
+      ],
+      "UnparsedAddress": "423 Mansell St, San Francisco, CA 94134",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-01T03:56:44.724Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482927b",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 517,
+      "AssociationFee": 409,
+      "ListPrice": 261196,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 7356,
+      "YearBuilt": 2011,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 362,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Et laborum sapiente inventore in id. Debitis placeat in ut nobis. Est consequatur consequatur accusamus. Quia et incidunt quae perferendis repellat. Sunt sed sed perferendis qui ex.\n \r\tIure dicta ratione minima eum cupiditate autem quam. Fuga accusamus quaerat veritatis voluptatem molestias placeat. Laudantium ea accusamus cupiditate a natus et et corrupti. Asperiores voluptatem corrupti nulla nihil doloremque earum nulla enim. Rerum et nisi distinctio explicabo.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        }
+      ],
+      "UnparsedAddress": "830 Alvarado St, San Francisco, CA 94114",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-10T22:28:21.189Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292a0",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 651,
+      "AssociationFee": 87,
+      "ListPrice": 776225,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 2534,
+      "YearBuilt": 1944,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 262,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Boiler", "Electric", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Id omnis reprehenderit laboriosam nobis corrupti incidunt sed laborum. Non repellendus accusantium quod culpa et voluptatem numquam exercitationem. Eaque deleniti voluptatem non non reiciendis et.\n \r\tVoluptatem aut est ipsam ut eos. Omnis saepe quo voluptate dolor nam. Blanditiis aliquam deserunt rerum dolor aut doloremque possimus. Repellat quis distinctio nulla. Velit accusantium omnis est quos quod.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        }
+      ],
+      "UnparsedAddress": "Lake Merced Blvd, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-07T14:22:54.047Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829295",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1287,
+      "AssociationFee": 17,
+      "ListPrice": 80119,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 6145,
+      "YearBuilt": 1977,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 64,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Electric", "Boiler", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Maxime nihil non autem voluptates. Sit sed iusto eum. Est aspernatur ab consequuntur temporibus et quibusdam expedita atque.\n \r\tQuo aut autem ducimus laboriosam accusantium. Facere voluptatibus ad ea voluptatum praesentium ullam. Nobis qui rem voluptatibus. Ut in facere molestiae repellendus illo.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [],
+      "UnparsedAddress": "1070 Vermont St, San Francisco, CA 94110",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-15T23:57:58.172Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829292",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1929,
+      "AssociationFee": 235,
+      "ListPrice": 49645,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 8208,
+      "YearBuilt": 1995,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 188,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump", "Forced Air", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Officia ipsam eum quidem sunt ducimus. Nemo eos deserunt in sequi. Esse ad voluptas et eligendi accusamus. Et eum eos doloremque dolor quia voluptas nihil.\n \r\tVoluptates facere veniam aut suscipit ut harum. Reiciendis voluptates minus repellendus consectetur id. Ullam architecto accusantium illo aspernatur ut nam facere molestias.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "66 Anderson St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-26T23:06:15.862Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292ab",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 742,
+      "AssociationFee": 279,
+      "ListPrice": 966682,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6831,
+      "YearBuilt": 1995,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 7,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood", "Heat Pump", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Itaque magni distinctio voluptas temporibus porro dolorum magnam quis. Consequatur voluptatem quasi et alias fuga quis fuga. Et ipsam repellat ipsa consequatur officia in ex libero.\n \r\tUt omnis aut suscipit molestiae. Debitis aut non quae ullam quisquam provident ut quas. Tenetur pariatur sed necessitatibus dolor soluta natus. Eos sed enim et. Autem illum dolor minus officiis et aperiam magni saepe.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "770 Andover St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-20T01:48:14.535Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292d2",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 889,
+      "AssociationFee": 481,
+      "ListPrice": 239980,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 9318,
+      "YearBuilt": 1962,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 248,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Iusto eligendi soluta laudantium et facilis dolor sapiente sit. Libero vel quia maxime. Eaque necessitatibus ad iure impedit. Et est veniam est velit voluptatem reiciendis. Officia est cumque excepturi porro.\n \r\tDolor eos nostrum qui. Officiis amet repudiandae repellat ipsum iusto rerum pariatur. Qui doloribus molestias voluptates aut itaque. Saepe ut incidunt est labore repellendus debitis quo dolorum. Et aliquid suscipit aut recusandae.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        }
+      ],
+      "UnparsedAddress": "San Francisco, CA",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-14T00:56:14.412Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292eb",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1737,
+      "AssociationFee": 444,
+      "ListPrice": 837447,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 9702,
+      "YearBuilt": 2003,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 237,
+      "View": ["View", "Mountain"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Electric", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Laudantium dolorem totam iure mollitia eum ut. Qui maiores delectus vel. Commodi dolorem temporibus repudiandae non enim consequatur. Quidem aperiam dolorem tempora sapiente est consequatur.\n \r\tPlaceat maiores sint iste alias. Sint eligendi qui voluptatem sit sunt. Mollitia iusto molestias reprehenderit labore eos.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        }
+      ],
+      "UnparsedAddress": "45 Broadmoor Dr, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-30T03:08:03.934Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292c7",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1237,
+      "AssociationFee": 421,
+      "ListPrice": 247544,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 9977,
+      "YearBuilt": 1947,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 231,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Molestiae ipsa accusantium ducimus reprehenderit qui. In dolor consequatur sit libero perspiciatis. Veritatis incidunt mollitia error corrupti praesentium sit.\n \r\tCupiditate hic molestias et eos. Ut odio sequi aut quo ut commodi quo. Laborum ea assumenda beatae debitis.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        }
+      ],
+      "UnparsedAddress": "1781 Church St, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-16T19:48:57.946Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292bc",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1049,
+      "AssociationFee": 125,
+      "ListPrice": 887912,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 3569,
+      "YearBuilt": 1968,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 117,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Boiler", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Enim consequatur repudiandae eaque quidem cumque vero. Iure nisi facilis facilis a aut recusandae itaque vitae. Aut repudiandae quae eveniet temporibus consequatur velit dolores.\n \r\tNam quod dolores sit magni. Voluptas molestias quos dolor quisquam in. Dolorum id placeat perspiciatis molestias nulla. Facere dolorem quisquam omnis dignissimos sunt id reprehenderit amet. Ut magnam vitae quam velit nulla animi.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        }
+      ],
+      "UnparsedAddress": "1024 Persia Ave, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-05T16:57:39.111Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292d7",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1003,
+      "AssociationFee": 364,
+      "ListPrice": 125960,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 7113,
+      "YearBuilt": 2007,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 162,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Forced Air", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Rem aut nobis sequi dicta deleniti quibusdam nisi. Quam et sed quia sunt quasi qui in est. Quia repellat autem vitae corporis voluptatibus sapiente. Ut veniam asperiores omnis odio est ab omnis.\n \r\tNulla fuga unde ex ea voluptatem dicta facere. Temporibus eum qui officia quasi et nisi. Quaerat veritatis sed quo. Officiis in rem ut quam. Et rerum aliquam ad minima vero porro.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        }
+      ],
+      "UnparsedAddress": "1700 Jerrold Ave, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-11T04:03:28.600Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292e3",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1827,
+      "AssociationFee": 218,
+      "ListPrice": 515178,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6618,
+      "YearBuilt": 1968,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 53,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Boiler", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Ipsa rerum rem a itaque nihil hic. Sit excepturi vero quo maxime aut quis cumque. Sed qui quia architecto dicta aliquam sit voluptas corrupti. Dolorem dicta non quaerat dolorem aut accusantium ad ipsum.\n \r\tNobis sed est id officia. Alias vel voluptas quia distinctio occaecati tempore ipsa. Dolore molestiae ut quo.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        }
+      ],
+      "UnparsedAddress": "1379 39th Ave, San Francisco, CA 94122",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-11T20:47:29.661Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829309",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1316,
+      "AssociationFee": 371,
+      "ListPrice": 440856,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 9502,
+      "YearBuilt": 1974,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 268,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Rem commodi non quis ea animi. Excepturi ullam vitae voluptatem ut ducimus nostrum autem. Cum praesentium accusantium ad ut ea. Et odit voluptatem adipisci.\n \r\tIpsa id nobis aperiam soluta et consequatur. Vel dolorum dolor recusandae quam sint iure beatae beatae. Maiores non illo sit odio fugiat reiciendis necessitatibus autem. Ut velit veniam consequatur esse odit quia.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "3019 Quintara St, San Francisco, CA 94116",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-15T12:44:59.163Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b348292f6",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1550,
+      "AssociationFee": 345,
+      "ListPrice": 495696,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 768,
+      "YearBuilt": 1993,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 93,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Electric", "Heat Pump", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Consectetur autem modi ut molestiae. Distinctio nostrum tenetur quam aut adipisci. Et rerum et tenetur et quos blanditiis. Totam perferendis ut laborum sed odio provident et.\n \r\tConsequatur cupiditate sit sequi consequatur quo. Excepturi et voluptas id quia dolorem aut esse. Voluptate minima vel vel ut cupiditate sit ea.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        }
+      ],
+      "UnparsedAddress": "1330 Palou Ave, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-05-30T08:51:52.620Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829325",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 518,
+      "AssociationFee": 145,
+      "ListPrice": 534694,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 561,
+      "YearBuilt": 1995,
+      "StandardStatus": "Active",
+      "PropertySubType": "Manufactured Home",
+      "DaysOnMarket": 44,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Electric", "Wood", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Et deleniti vero accusamus. Officia cupiditate rerum quasi eveniet. Id aspernatur sed velit non et libero ea aliquam.\n \r\tEius ut perspiciatis non molestiae dignissimos est expedita. Velit sit quia id tempora. Molestiae occaecati molestias ex. Et cum pariatur rerum.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        }
+      ],
+      "UnparsedAddress": "126 Ellsworth St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-22T10:03:30.019Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829302",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1574,
+      "AssociationFee": 213,
+      "ListPrice": 580041,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 2522,
+      "YearBuilt": 1959,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 141,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Boiler", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Et expedita adipisci rerum. Eveniet quibusdam inventore quos est. Qui exercitationem a ut sed id tempore labore. Commodi nam dolorem sed.\n \r\tEst rem non quae. Vel fuga iste sapiente sed qui. Nihil ipsam et saepe aliquid numquam rerum. At fugit aliquam animi est ex. Quia magni sed quis ipsum reiciendis excepturi.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        }
+      ],
+      "UnparsedAddress": "4654 19th St, San Francisco, CA 94114",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-20T08:17:44.460Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829315",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1120,
+      "AssociationFee": 109,
+      "ListPrice": 434259,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 6317,
+      "YearBuilt": 2004,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 237,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Wood", "Forced Air", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Ratione est tempora quis rerum est officiis et. Consectetur quis ut ipsa voluptatum architecto exercitationem nemo. Explicabo accusantium quaerat iure sint. Ea officia porro corporis. Tenetur voluptatibus libero laboriosam et.\n \r\tVoluptatem consequatur enim impedit iusto sed maiores qui. Occaecati sint quaerat culpa voluptatum eos. Saepe laborum aspernatur facere. Unde quam qui enim maiores eaque. Dolore est facere veniam dolorem distinctio.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        }
+      ],
+      "UnparsedAddress": "1515 Twin Peaks Blvd, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-14T11:28:43.584Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829338",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1694,
+      "AssociationFee": 316,
+      "ListPrice": 855260,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 4701,
+      "YearBuilt": 1943,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 258,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Wood", "Heat Pump", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Id ab reprehenderit distinctio repudiandae eum dicta magnam odit. Consectetur alias possimus error. Praesentium cupiditate corporis sed animi expedita quis at. Quo autem maiores velit est praesentium. Placeat sed numquam maiores eius illo quia ab.\n \r\tAliquid eveniet esse aperiam sequi repudiandae. Rerum delectus quo dolor maiores quos. Rerum hic consequatur iste rerum rerum nesciunt repudiandae. Autem iure animi aut. Quia voluptate laudantium ipsam iure saepe provident.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        }
+      ],
+      "UnparsedAddress": "401 San Bruno Ave, San Francisco, CA 94110",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-08-02T21:20:24.056Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829349",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 674,
+      "AssociationFee": 90,
+      "ListPrice": 821223,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 9087,
+      "YearBuilt": 1987,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 190,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Boiler", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Sit possimus non sunt. Iusto consequatur quos dolore nihil magnam. Neque ipsa nihil a. Ut rerum non earum quia blanditiis expedita itaque.\n \r\tAsperiores assumenda quam dolorem et. Ducimus in pariatur aliquid consequatur. Praesentium tempora suscipit saepe.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        }
+      ],
+      "UnparsedAddress": "640 Valencia St, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-13T14:02:52.532Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829341",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 1583,
+      "AssociationFee": 407,
+      "ListPrice": 541224,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 3527,
+      "YearBuilt": 2004,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 276,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Quia qui quod sed vel dolorem. Neque ut id quod ipsum. Id qui et voluptate sed ut consequatur mollitia rem. At molestias cupiditate qui voluptates doloribus fuga quia. Aut est maiores magnam excepturi ab voluptatem.\n \r\tArchitecto ut est suscipit labore sed magni. Maxime et sapiente ipsam quas repellendus repudiandae. Nulla fugiat officiis explicabo aliquid qui eveniet sint ut. Sed aut dolorum asperiores corrupti iure. Consequatur id molestiae eum.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        }
+      ],
+      "UnparsedAddress": "70 San Pablo Ave, San Francisco, CA 94127",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-05T22:03:09.649Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482936b",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 601,
+      "AssociationFee": 174,
+      "ListPrice": 410982,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 3906,
+      "YearBuilt": 2002,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 274,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood", "Electric", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Ab voluptas natus dolores quaerat doloremque aut et. Assumenda aspernatur veniam non rem eveniet incidunt. Libero vel voluptatem et. Veniam delectus consequuntur mollitia sit molestiae et nobis animi.\n \r\tIn voluptatem delectus dicta iusto. Non corporis et id incidunt. Hic temporibus quis dolore quisquam commodi ex a.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        }
+      ],
+      "UnparsedAddress": "90 Ocean Ave, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-05T08:31:53.162Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829356",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1959,
+      "AssociationFee": 394,
+      "ListPrice": 618766,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5510,
+      "YearBuilt": 1944,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 346,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump", "Boiler", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Vitae aliquid laudantium reprehenderit aut a similique minima. Vitae odit sed consequatur et rerum. Officia voluptates nam magnam eligendi aspernatur accusamus est.\n \r\tMaiores fuga id quam id provident et rerum. Cupiditate expedita consequuntur eum velit voluptas consequatur. Soluta officia dolores et. Ex asperiores molestias nemo id et. Voluptate ad recusandae eaque sed.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        }
+      ],
+      "UnparsedAddress": "4701 3rd St, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-05-16T11:08:19.163Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482935a",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 694,
+      "AssociationFee": 311,
+      "ListPrice": 552967,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5052,
+      "YearBuilt": 1981,
+      "StandardStatus": "Active",
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 104,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump", "Wood", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Quidem explicabo accusamus et aut voluptas tenetur maiores. Iste ut neque omnis saepe et voluptate. Id et sit non minima enim eveniet consequatur. Id nemo qui nostrum similique quia ut quaerat corporis.\n \r\tDeserunt quaerat repudiandae dolorem maiores. Soluta nam alias numquam reprehenderit in quia. Quis id natus aut atque qui non. Maxime nobis quidem natus nostrum.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        }
+      ],
+      "UnparsedAddress": "53 Diamond St, San Francisco, CA 94114",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-21T05:47:09.810Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829361",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 643,
+      "AssociationFee": 193,
+      "ListPrice": 496176,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4953,
+      "YearBuilt": 1999,
+      "PropertySubType": null,
+      "DaysOnMarket": 144,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Wood", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Quis dolor consequatur accusantium. Incidunt est laboriosam ex tempora voluptatem tempora quis. Corporis et neque saepe eos voluptas numquam ut repellendus.\n \r\tQuisquam velit a quia et tempora est nemo. Quibusdam et eius quos dolorem earum aliquam. In in sit porro itaque. Unde necessitatibus officiis rerum quia voluptate tempore molestiae sit. Rerum assumenda aspernatur veniam.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        }
+      ],
+      "UnparsedAddress": "535 Brussels St, San Francisco, CA 94134",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-20T10:29:50.980Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829332",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1994,
+      "AssociationFee": 409,
+      "ListPrice": 606967,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 6667,
+      "YearBuilt": 1957,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 159,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Heat Pump", "Wood", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Molestiae quod et voluptas. Adipisci vitae exercitationem fuga laudantium doloribus. Iste nihil repellendus quia. Aspernatur dolorem facere fuga iste ea sint alias.\n \r\tUt sed aut velit et eius aut maiores tempora. Eum numquam autem voluptate. Possimus consequatur asperiores vitae dolore magni pariatur velit inventore.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        }
+      ],
+      "UnparsedAddress": "347 Santa Ana Ave, San Francisco, CA 94127",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-23T03:36:11.010Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482931d",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1649,
+      "AssociationFee": 124,
+      "ListPrice": 414431,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 4935,
+      "YearBuilt": 1958,
+      "StandardStatus": "Active",
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 72,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Electric", "Boiler", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Numquam mollitia vel quisquam quisquam. A vero reprehenderit natus suscipit assumenda occaecati quisquam iusto. Totam amet perspiciatis iste assumenda aperiam in vitae voluptas. Quis amet aspernatur perferendis ad. Tempore sunt nisi dolor deserunt voluptatem molestiae in illum.\n \r\tEarum architecto molestiae id. Itaque possimus alias porro. Culpa est omnis magni quia.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        }
+      ],
+      "UnparsedAddress": "5290 Diamond Heights Blvd, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-31T00:08:56.460Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829374",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 722,
+      "AssociationFee": 121,
+      "ListPrice": 65369,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 489,
+      "YearBuilt": 1971,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 209,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Et aut voluptatem sit quo maxime et vel. Eaque id quo nihil cupiditate et. Veniam dignissimos non in amet voluptatibus rem tempore. Eos eius ut fugiat deserunt quaerat iure nisi.\n \r\tRerum ducimus quam quos quos non voluptas vel. Sapiente nobis id sed harum ut quis consequatur magni. Consectetur consequatur fugiat quis dolores. Dolore et at ut quas.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "1669 Quint St, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-12T02:15:09.522Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b3482938b",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1611,
+      "AssociationFee": 3,
+      "ListPrice": 683809,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 9162,
+      "YearBuilt": 1998,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 169,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Heat Pump", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Et quia eos rerum nihil fugiat necessitatibus. Quia quia et ipsa odit commodi architecto ipsam. Quisquam provident ut beatae blanditiis ab.\n \r\tLabore quo deserunt nisi. Qui itaque eos sequi. Ut animi et hic consequatur commodi consequuntur magni. Laudantium dicta ipsum libero ducimus sit ea voluptas.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        }
+      ],
+      "UnparsedAddress": "14 Harding Rd, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-23T16:46:32.587Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829380",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 544,
+      "AssociationFee": 421,
+      "ListPrice": 639631,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 9736,
+      "YearBuilt": 1989,
+      "PropertySubType": "Manufactured Home",
+      "DaysOnMarket": 113,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Odit porro velit ullam consequatur et. Qui ea qui magnam totam consectetur. Aut et et laboriosam.\n \r\tDebitis tempore a ea et delectus qui. Consequatur molestias tempora voluptas. Voluptate dolorum nostrum atque rerum fugiat esse et quisquam. In quae saepe eligendi rem ratione nihil.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "30 Harding Rd, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-01T15:01:12.805Z"
+    },
+    {
+      "ListingId": "5af601c3fc76173b34829390",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1898,
+      "AssociationFee": 476,
+      "ListPrice": 538251,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 7306,
+      "YearBuilt": 2000,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 332,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Wood", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Ducimus repudiandae quas doloremque libero aut ab facere. Autem dolor praesentium cum velit autem ea asperiores. Libero porro voluptatibus dolorem aut. Perferendis ipsum in et at accusantium.\n \r\tAt incidunt quo ea possimus et deleniti. Ea voluptas impedit est molestias eligendi maxime. Unde a praesentium aut et quis libero laudantium.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        }
+      ],
+      "UnparsedAddress": "380 Bacon St, San Francisco, CA 94134",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-08-03T04:33:59.923Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482939a",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 824,
+      "AssociationFee": 205,
+      "ListPrice": 910622,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 8793,
+      "YearBuilt": 1970,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 342,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Boiler", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Nesciunt cum sint dolorum aut quia ab doloremque facilis. Velit est natus et dolores atque. Sit voluptatibus sint voluptatibus. Enim id nam occaecati vel sit. Omnis sint placeat ex natus.\n \r\tFugit non iure eligendi. Vel hic animi officiis dolores inventore quis corrupti nobis. Cum voluptatem ab qui. Qui sint aut omnis.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        }
+      ],
+      "UnparsedAddress": "280 Buckingham Way, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-10T08:42:53.145Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482939d",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 634,
+      "AssociationFee": 9,
+      "ListPrice": 855565,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 1736,
+      "YearBuilt": 1971,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 151,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Nostrum vel quam saepe placeat. Ut vel quia commodi distinctio exercitationem qui dicta quibusdam. Minima debitis maiores aperiam sunt.\n \r\tAdipisci et quo vitae ut omnis consequatur. Deserunt hic quo dicta et aut eius molestias aperiam. Quod tempora accusamus quasi sit et eum id. Quaerat quas consequuntur nam.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 2,
+      "Media": [],
+      "UnparsedAddress": "2674 Ocean Ave, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-06T05:10:32.728Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293c6",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1794,
+      "AssociationFee": 164,
+      "ListPrice": 300956,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5610,
+      "YearBuilt": 1944,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 81,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Electric", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Est suscipit deleniti vel in quia et. Error voluptas aut ut est voluptatem magni. Et minus voluptates harum consequatur incidunt voluptas saepe repudiandae. Suscipit sunt ut ad. Omnis aliquid numquam aliquam ea deserunt.\n \r\tMolestiae voluptatibus et ut non nihil quia tenetur ut. Quo doloremque sed aliquam. Dolorem voluptas itaque architecto quos corporis nisi. Saepe enim earum iure assumenda magnam voluptatem. Quis est aut consequatur.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        }
+      ],
+      "UnparsedAddress": "16 Harding Rd, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-29T08:15:51.394Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293bc",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1264,
+      "AssociationFee": 135,
+      "ListPrice": 589265,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4082,
+      "YearBuilt": 2004,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 127,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Neque natus vitae laborum maiores ratione. Aperiam nihil deleniti ratione. Aut natus animi iure reprehenderit quia necessitatibus quas et.\n \r\tSint voluptas sed magnam quam quam fugiat quisquam asperiores. Distinctio cupiditate eligendi consequatur inventore dicta rerum non deleniti. Culpa numquam corrupti cupiditate eveniet nihil distinctio. Aliquid laboriosam quidem non magni est est.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        }
+      ],
+      "UnparsedAddress": "550 20th St, San Francisco, CA 94107",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-09T04:21:32.133Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293b0",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1069,
+      "AssociationFee": 5,
+      "ListPrice": 135809,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 6178,
+      "YearBuilt": 1950,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 277,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Electric", "Boiler", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Eum rerum voluptates ad porro voluptate mollitia odio odit. Voluptas aliquid in vel. Quia tempora sit reiciendis et. Tempore nemo necessitatibus aspernatur. Autem maiores similique cupiditate inventore rerum deserunt dolor itaque.\n \r\tUt suscipit aut nisi fugiat quia. Officia omnis labore odit nulla amet possimus non. Iste officiis eveniet architecto quam consequatur. Dicta quia ullam voluptas dolorem magnam molestiae cumque tempore.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        }
+      ],
+      "UnparsedAddress": "1693 Quint St, San Francisco, CA 94124",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-03T02:28:33.426Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293a7",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1974,
+      "AssociationFee": 384,
+      "ListPrice": 840988,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 3486,
+      "YearBuilt": 1955,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 336,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Voluptatum et fuga ut optio delectus harum illo voluptate. Aut quo id et vitae sit itaque. Voluptas excepturi beatae sit.\n \r\tQuo itaque dicta id soluta error ut. Velit velit rerum consequatur saepe illum. Rem quam in earum fuga consequatur.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "2640 23rd Ave, San Francisco, CA 94116",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-16T19:05:45.329Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293d1",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 982,
+      "AssociationFee": 53,
+      "ListPrice": 976965,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 1345,
+      "YearBuilt": 1994,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 106,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Boiler", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Illum consectetur id quam illum maiores vero. In ea nulla blanditiis vel blanditiis totam enim. Eos eos exercitationem eos praesentium et asperiores eos et.\n \r\tQuaerat eum accusamus quibusdam maxime. Neque laborum tempore autem. Sapiente quia ab natus qui inventore et illum dolorem. Deleniti quisquam et quo eos impedit et reprehenderit.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        }
+      ],
+      "UnparsedAddress": "229 Edinburgh St, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-05T15:52:19.468Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293d8",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1329,
+      "AssociationFee": 287,
+      "ListPrice": 147022,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5963,
+      "YearBuilt": 1954,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 206,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Tempore ut soluta eos qui architecto. Harum temporibus voluptas aut illo asperiores enim velit optio. Deserunt nostrum qui excepturi. Dolores sint nisi rerum voluptas. Sint dolorem nisi autem.\n \r\tSaepe ut quae non quas quia eum occaecati sed. Laudantium qui autem velit nobis aliquam voluptatibus voluptatem. Voluptatem quia praesentium repellat et sequi neque non. Dolorum illo accusamus qui ipsam voluptatem quo.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        }
+      ],
+      "UnparsedAddress": "61 John F Shelley Dr, San Francisco, CA 94134",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-22T18:22:10.318Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293ea",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1539,
+      "AssociationFee": 10,
+      "ListPrice": 44972,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 7660,
+      "YearBuilt": 1967,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 49,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Vel qui quo eum. Magnam enim atque consequatur ut non amet velit sint. Saepe dolore rerum consectetur.\n \r\tDoloremque cumque illo consectetur doloremque quaerat explicabo provident. Quas non ab nobis aut amet tempore sit qui. Tempore et et laboriosam dolorem molestias debitis ex. Eos cum natus suscipit dolorem ea. Voluptas tenetur qui distinctio.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        }
+      ],
+      "UnparsedAddress": "1560 Treat Ave, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-04T08:45:19.800Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293dd",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1728,
+      "AssociationFee": 45,
+      "ListPrice": 144774,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 3396,
+      "YearBuilt": 1993,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 282,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Electric", "Wood", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Quas et ut porro fugit. Non mollitia voluptatem molestiae qui qui quos quis architecto. Voluptatem fuga et quam ratione eos doloribus quia.\n \r\tOdio quia quisquam omnis sint maiores repudiandae. Laboriosam impedit voluptates in est rerum recusandae distinctio. Aut velit laudantium unde rerum.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        }
+      ],
+      "UnparsedAddress": "1250 11th Ave, San Francisco, CA 94122",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-06T05:54:00.453Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348293f6",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1146,
+      "AssociationFee": 46,
+      "ListPrice": 261970,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 7043,
+      "YearBuilt": 1977,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 179,
+      "View": ["View", "Park"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Necessitatibus doloremque ea cumque aut quo minima. Quis libero quis ab sunt doloremque. Dolores totam voluptas beatae esse error consequatur. Placeat nihil aliquam hic iure. Saepe debitis ea reprehenderit dolores similique sunt sapiente neque.\n \r\tAut perspiciatis aut reiciendis illo quibusdam. Tenetur aliquid perferendis molestiae corporis recusandae itaque. Neque modi saepe qui ut hic illo eius blanditiis. Itaque doloremque nulla et minima dolorem rerum laudantium.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/14.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        }
+      ],
+      "UnparsedAddress": "36 Granville Way, San Francisco, CA 94127",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-15T13:56:35.575Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829400",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1621,
+      "AssociationFee": 403,
+      "ListPrice": 470341,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 8051,
+      "YearBuilt": 1954,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 54,
+      "View": ["View", "Park"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Boiler", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Veniam ea atque cumque tempora qui totam error distinctio. Omnis numquam consequatur at et. Magni repudiandae eum unde sit.\n \r\tAnimi temporibus voluptate qui. Pariatur ut consectetur sit. Ab sit ad velit voluptates et saepe id et. Voluptatibus corporis et nam totam veniam dolore autem velit.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        }
+      ],
+      "UnparsedAddress": "41 Acevedo Ave, San Francisco, CA 94132",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-29T05:29:44.476Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482940a",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1164,
+      "AssociationFee": 72,
+      "ListPrice": 799765,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5717,
+      "YearBuilt": 1958,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 238,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Boiler", "Heat Pump", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Voluptas iusto aliquam harum amet non. Dolorum illo eligendi cumque. Rerum molestias praesentium et nisi ut eos molestiae.\n \r\tFugiat enim facere voluptatum. Qui optio iure ratione quae non omnis cumque provident. Omnis quod sit deserunt autem aperiam officia consequatur. Ducimus quo veritatis culpa provident eveniet necessitatibus ab.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "1920 41st Ave, San Francisco, CA 94122",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-08-03T16:05:46.114Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829413",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 1463,
+      "AssociationFee": 229,
+      "ListPrice": 763812,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6841,
+      "YearBuilt": 1990,
+      "PropertySubType": "Duplex",
+      "DaysOnMarket": 229,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Laudantium nihil iste dolorem. Iste eum in minus unde est veritatis est error. Ratione doloremque totam corporis voluptates animi nulla hic. Aut ut provident voluptatem ullam nostrum et itaque minus. Facere et non doloribus alias.\n \r\tEos laboriosam ut impedit occaecati qui ut vitae. Dicta occaecati veniam qui optio velit natus. Dolores et exercitationem consequatur aut molestias fugit quia labore. Sed natus aut architecto quas nesciunt.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        }
+      ],
+      "UnparsedAddress": "154 Dellbrook Ave, San Francisco, CA 94131",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-05-29T05:59:43.525Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482941b",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1379,
+      "AssociationFee": 382,
+      "ListPrice": 989674,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4412,
+      "YearBuilt": 2004,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 230,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Heat Pump", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Et sequi ut ut mollitia minima voluptates. Temporibus doloribus dolores aut sunt assumenda tempora magnam possimus. Consequatur sed labore voluptatibus qui.\n \r\tVeniam eos quasi ut beatae praesentium. Id id dolor quia ut voluptates. Sequi harum enim ratione ut. Voluptatum debitis harum nobis. Quae vitae adipisci ea optio inventore.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "1315 Ocean Ave, San Francisco, CA 94112",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-07-03T05:09:26.122Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829421",
+      "LotSizeAcres": 8,
+      "LotSizeSquareFeet": 1952,
+      "AssociationFee": 67,
+      "ListPrice": 72933,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 646,
+      "YearBuilt": 2001,
+      "StandardStatus": "Active",
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 109,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Forced Air", "Wood", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Sit nisi voluptatem repudiandae aliquam nihil nisi laborum. Laboriosam consequatur temporibus cumque. Veritatis similique quaerat sequi ut suscipit nisi. Nihil minus modi quas ut aut dolorem consequatur ab. Error autem totam temporibus adipisci non laboriosam voluptatem occaecati.\n \r\tEt est sit adipisci cumque corporis cumque quasi. Enim repellat pariatur ipsam corporis blanditiis mollitia et. Saepe vitae amet facilis quam. Velit ut vero aut at. Eum dolorem et ab.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "310 Holladay Ave, San Francisco, CA 94110",
+      "City": "Mission Dolores",
+      "AvailabilityDate": "2018-06-07T23:09:07.469Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829443",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1453,
+      "AssociationFee": 91,
+      "ListPrice": 549656,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 625,
+      "YearBuilt": 1942,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 223,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Unde totam vel a eius voluptatem sint ducimus. Est quo doloribus sed ducimus quia aliquam explicabo. Est sed consequatur fugiat ut. Eveniet recusandae iste magnam quas qui voluptas reiciendis.\n \r\tAccusantium quia ut qui provident dignissimos. Maxime iste neque aut. Omnis aut sapiente animi iste dolore. Velit consequatur dolor ipsum facere repellat ratione necessitatibus repudiandae. Sint aut consequatur dolores libero cupiditate quas sit.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "32 Diana St, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-06-21T22:20:40.769Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829446",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 914,
+      "AssociationFee": 390,
+      "ListPrice": 769247,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 4149,
+      "YearBuilt": 2003,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 267,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Aut dolorem maiores qui dolor. A aliquam dolores amet nobis est dolores eos labore. Non tenetur dolore vitae quas consectetur nesciunt.\n \r\tNatus magnam error cupiditate voluptas iste pariatur voluptas enim. Eligendi ut est qui harum. Expedita exercitationem nihil voluptas consequatur nulla nihil.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 4,
+      "Media": [],
+      "UnparsedAddress": "1726 31st Ave, San Francisco, CA 94122",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-22T02:29:43.958Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829435",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 898,
+      "AssociationFee": 127,
+      "ListPrice": 556760,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 4998,
+      "YearBuilt": 1976,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 241,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Quo magnam quisquam odio cum autem deserunt hic. Qui dignissimos eum excepturi pariatur rerum sapiente a. Sequi architecto odit aliquid.\n \r\tDignissimos est doloremque laborum. Nam quis voluptas libero illum architecto quod nihil. Ut voluptatibus architecto et consectetur sit.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        }
+      ],
+      "UnparsedAddress": "5020 Mission St, San Francisco, CA 94112",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-05-23T02:25:31.395Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829429",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 623,
+      "AssociationFee": 252,
+      "ListPrice": 867456,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 9306,
+      "YearBuilt": 1961,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 269,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Boiler", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Eligendi earum libero et. Sequi sint debitis aut. Tempore placeat qui officia molestias voluptates.\n \r\tEst aperiam quibusdam est aspernatur. Odit fugiat alias enim et iste repellendus dolorem ad. Minima asperiores eum ea velit molestiae sit. Animi sit voluptatem dolorem autem blanditiis aut eveniet iusto. Rerum cupiditate quia magni ut vitae dignissimos.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        }
+      ],
+      "UnparsedAddress": "525 20th St, San Francisco, CA 94107",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-14T18:49:46.643Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829455",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1067,
+      "AssociationFee": 339,
+      "ListPrice": 533671,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 3718,
+      "YearBuilt": 1946,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 217,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Totam et qui vel tempora ut. Non quam ducimus error amet eum sunt. Expedita aut non aut sed provident ex nesciunt. Dolorem sed distinctio id est.\n \r\tMollitia aliquam expedita omnis voluptas quae facere vitae voluptatum. Aut at rerum voluptas dolorem molestias autem quis quod. Et deserunt facilis ut praesentium doloribus aut voluptatum.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/15.jpg"
+        }
+      ],
+      "UnparsedAddress": "350 Rhode Island St, San Francisco, CA 94103",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-09T22:49:05.041Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482945c",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 546,
+      "AssociationFee": 385,
+      "ListPrice": 873317,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 8516,
+      "YearBuilt": 1956,
+      "PropertySubType": "Cabin",
+      "DaysOnMarket": 53,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Heat Pump"],
+      "PoolPrivateYN": true,
+
+      "Disclaimer": "Eius numquam inventore libero earum. Et quaerat est ea officiis. Veritatis ut asperiores et numquam. Harum quis minus natus nihil aut praesentium vel suscipit.\n \r\tDoloribus ut qui repudiandae voluptatem. Rerum architecto quasi sit accusantium. Fugiat ex aut sequi sunt non quam nihil quis. Doloremque ut rerum aut ut ducimus ipsam rem totam.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/27.jpg"
+        }
+      ],
+      "UnparsedAddress": "Lake Merced Blvd, San Francisco, CA 94132",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-01T06:23:13.557Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829466",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1254,
+      "AssociationFee": 328,
+      "ListPrice": 147219,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 3945,
+      "YearBuilt": 1946,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 85,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Non delectus cupiditate cumque excepturi esse vel et doloremque. Et ut enim maiores veritatis provident tenetur ut. Est a voluptatibus vero voluptatibus laborum ullam optio. Dolore tempore id numquam non dolor repudiandae.\n \r\tDeleniti earum et officiis et porro velit illum vitae. A earum consequatur consequuntur animi id molestiae. Vero quia et aut quo hic quas.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/13.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        }
+      ],
+      "UnparsedAddress": "850 Judah St, San Francisco, CA 94122",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-15T21:43:48.773Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482947a",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1123,
+      "AssociationFee": 415,
+      "ListPrice": 874665,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 2210,
+      "YearBuilt": 1953,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 72,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Wood", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Similique autem sit maxime rerum nisi temporibus. Ut cupiditate perspiciatis fugiat voluptatem odit consectetur possimus. Explicabo rem repudiandae nisi optio et. Et beatae et vel sed excepturi quibusdam. In qui illum consectetur natus.\n \r\tDoloremque voluptatem reiciendis quibusdam voluptatum cum. Non enim nihil explicabo quidem. Fugit porro qui voluptatum.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/20.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/10.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/26.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        }
+      ],
+      "UnparsedAddress": "241 Quint St, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-06-22T08:52:43.653Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482946e",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1471,
+      "AssociationFee": 227,
+      "ListPrice": 42855,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 7878,
+      "YearBuilt": 1984,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 349,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Culpa vel ea eos. Facilis et nihil laboriosam sint. Aperiam libero tempora fugit. Accusamus dolorum unde distinctio. Quis et id voluptas nulla.\n \r\tQui quidem incidunt ea eum delectus modi. Eum aut sapiente asperiores dolor quas. Quia omnis molestiae harum eum voluptatem voluptatem.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        }
+      ],
+      "UnparsedAddress": "918 Alabama St, San Francisco, CA 94110",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-20T12:34:48.081Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829485",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1147,
+      "AssociationFee": 252,
+      "ListPrice": 755677,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 3992,
+      "YearBuilt": 1993,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 67,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Doloremque quae dolor dolores qui quaerat. Maiores sit aspernatur magni fugit dolores sunt vero animi. Repellendus dolor ut occaecati enim. Qui omnis ut eveniet delectus veritatis reiciendis nemo.\n \r\tCommodi repudiandae id voluptas soluta sint deserunt velit. Qui suscipit est facere neque vitae voluptatem esse. Quis voluptatem eaque praesentium qui maxime. Eaque aut vel alias.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "1510 35th Ave, San Francisco, CA 94122",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-05-29T03:13:13.236Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482948a",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1373,
+      "AssociationFee": 340,
+      "ListPrice": 393186,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 6535,
+      "YearBuilt": 1993,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 155,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Wood", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Aut occaecati unde soluta sed temporibus facere eius temporibus. Esse eveniet quae autem officiis quos qui. Architecto et reprehenderit quia id voluptatem iste fuga eos. Totam consectetur alias magnam voluptatem accusantium eum.\n \r\tProvident molestiae odit recusandae nam facere accusamus optio. Veniam neque consequatur sit debitis. Quia ut eum numquam itaque error.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        }
+      ],
+      "UnparsedAddress": "85 Lomita Ave, San Francisco, CA 94122",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-06-15T20:28:35.650Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482944d",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 892,
+      "AssociationFee": 371,
+      "ListPrice": 823463,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 3051,
+      "YearBuilt": 1968,
+      "StandardStatus": "Active",
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 75,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Electric", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Commodi officia quaerat quibusdam eligendi libero. Et at odit nostrum inventore corrupti ab harum. Quis facere ipsum magnam repellat quibusdam non. Recusandae voluptatem delectus molestias sunt sed laborum.\n \r\tVeritatis qui doloremque non quibusdam. Et culpa voluptatem magnam nulla voluptatem repudiandae sunt. Vel quo necessitatibus repudiandae eum accusantium unde. Et commodi assumenda et laboriosam laboriosam. Est beatae voluptatem rerum ducimus unde quasi sint itaque.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "58 Ocean Ave, San Francisco, CA 94112",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-06T03:45:11.054Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829491",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1829,
+      "AssociationFee": 191,
+      "ListPrice": 682155,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6903,
+      "YearBuilt": 2003,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 233,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Wood", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Qui officia totam omnis. Sunt iusto voluptatem blanditiis molestias sapiente. Quos necessitatibus aperiam explicabo perspiciatis. Inventore ut velit facere laborum ut quia.\n \r\tNecessitatibus quod quam omnis molestias neque. Omnis voluptas a molestiae provident molestiae veniam repudiandae. Voluptate magni quisquam voluptates quaerat velit et nam. Est deserunt voluptates aperiam dolor praesentium corrupti reiciendis.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "550 Moultrie St, San Francisco, CA 94110",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-06-25T16:58:49.418Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829495",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1900,
+      "AssociationFee": 279,
+      "ListPrice": 645069,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 5587,
+      "YearBuilt": 2001,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 346,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Wood", "Electric", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Et nesciunt ducimus reiciendis possimus distinctio. Laudantium ipsam eum laboriosam. Natus velit animi ipsa voluptatem ex et.\n \r\tDebitis magnam omnis quaerat et qui. Saepe omnis voluptatum amet dolore iste. Dolores in quibusdam repellat.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        }
+      ],
+      "UnparsedAddress": "50 San Anselmo Ave, San Francisco, CA 94127",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-05T06:23:54.415Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482949c",
+      "LotSizeAcres": 9,
+      "LotSizeSquareFeet": 1873,
+      "AssociationFee": 477,
+      "ListPrice": 994817,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 9974,
+      "YearBuilt": 1995,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 56,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Boiler", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Provident asperiores odit consequatur nihil sed. Non rem rerum voluptates officiis distinctio est optio fuga. Doloremque est ducimus eos.\n \r\tDignissimos voluptatibus vitae eveniet iste hic. Qui qui voluptatibus atque et necessitatibus quis id minima. Doloremque distinctio a blanditiis pariatur ullam praesentium. Sed quis quo deserunt repellat libero ex. Ut omnis accusamus pariatur.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/35.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        }
+      ],
+      "UnparsedAddress": "6 Marcela Ave, San Francisco, CA 94116",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-02T04:57:33.833Z",
+      "Electric": null,
+      "ElectricExpense": null,
+      "ElectricOnPropertyYN": false,
+      "EntryLevel": null,
+      "FarmCreditServiceInclYN": null,
+      "FarmLandAreaSource": null,
+      "FarmLandAreaUnits": null
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294ac",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1747,
+      "AssociationFee": 47,
+      "ListPrice": 746856,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 2810,
+      "YearBuilt": 1975,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 105,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Boiler", "Wood", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Molestias praesentium quo deserunt pariatur nihil dolore. Quasi perspiciatis pariatur omnis ad aspernatur hic. Sed quia aut dolor.\n \r\tVoluptate sint incidunt placeat et quia. Esse minus beatae qui. Aut rerum sunt sit perspiciatis distinctio quae est magnam.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        }
+      ],
+      "UnparsedAddress": "3422 San Bruno Ave, San Francisco, CA 94134",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-21T08:06:50.291Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294b3",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 891,
+      "AssociationFee": 228,
+      "ListPrice": 548090,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 9927,
+      "YearBuilt": 2011,
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 19,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Est fugiat vitae aut ipsa. Et sed accusantium provident neque eius ducimus. Enim eveniet est aperiam consectetur hic. Sint unde nesciunt omnis aut nam. Voluptatem deleniti voluptatum vitae.\n \r\tQuaerat sint illo saepe. Quod qui ipsa illo ex omnis. Illo commodi a consectetur non accusamus inventore esse.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 1,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        }
+      ],
+      "UnparsedAddress": "Skyline Blvd, San Francisco, CA 94132",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-06T02:11:19.190Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294a2",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1543,
+      "AssociationFee": 335,
+      "ListPrice": 423263,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 8671,
+      "YearBuilt": 1971,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 60,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Boiler", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Esse assumenda quod non enim. Consequatur illum ipsum dolore. Iusto pariatur inventore delectus dolore aliquid et iste nemo.\n \r\tAut dolorem doloribus sunt quia inventore voluptas alias. Quo sit rem ducimus. Rem perspiciatis aperiam exercitationem vero temporibus beatae architecto. Odio aperiam et sint id blanditiis laboriosam. Autem ad sapiente quis expedita.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        }
+      ],
+      "UnparsedAddress": "65 Crestmont Dr, San Francisco, CA 94131",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-19T18:54:00.535Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294bb",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1655,
+      "AssociationFee": 104,
+      "ListPrice": 828713,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 1944,
+      "YearBuilt": 1994,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 227,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler"],
+      "Heating": ["Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Voluptatum aut voluptatem velit vero est tempora eaque molestias. Aut in quia quaerat ipsa repellat consequatur perspiciatis. Quia veritatis iure ipsa. Esse quam quasi qui fugit atque porro officiis doloribus.\n \r\tCum aut dolorum qui adipisci omnis tempore similique doloremque. Rem et aliquam tempore enim quaerat recusandae unde adipisci. Esse consectetur reprehenderit dolorem commodi.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/17.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        }
+      ],
+      "UnparsedAddress": "1875 32nd Ave, San Francisco, CA 94122",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-19T07:32:19.929Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294c0",
+      "LotSizeAcres": 1,
+      "LotSizeSquareFeet": 1905,
+      "AssociationFee": 3,
+      "ListPrice": 150798,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 9802,
+      "YearBuilt": 1977,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 123,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Heat Pump", "Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Inventore porro et et iure est. Veritatis dolores et aut esse. Debitis aliquid et non hic sapiente sequi sit. Maxime rerum quasi possimus qui est repudiandae.\n \r\tQuia ex corporis dolorem quos quia tenetur quas. Et nesciunt aut sint qui doloribus. Et vel ab qui blanditiis.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        }
+      ],
+      "UnparsedAddress": "70 De Soto St, San Francisco, CA 94127",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-26T22:46:17.857Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294dd",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1324,
+      "AssociationFee": 455,
+      "ListPrice": 912933,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 5866,
+      "YearBuilt": 2011,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 94,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Electric", "Forced Air"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Iusto qui eos illum tempora optio cupiditate. Dolor aspernatur sit ea dolores dicta dolores quibusdam et. Doloremque facilis eos hic. Delectus eos repudiandae pariatur dolor inventore et asperiores odit.\n \r\tVel sint tempore eligendi et quia fugiat. Praesentium aut veniam iste vero eum. Perferendis velit sint repellendus tempore aut.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/08.jpg"
+        }
+      ],
+      "UnparsedAddress": "366 Howth St, San Francisco, CA 94112",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-16T18:46:07.678Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294ce",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1055,
+      "AssociationFee": 16,
+      "ListPrice": 237945,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 6815,
+      "YearBuilt": 2007,
+      "StandardStatus": "Active",
+      "PropertySubType": "Townhouse",
+      "DaysOnMarket": 347,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Electric", "Boiler"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Modi cum dolorem similique nisi delectus laboriosam. Aliquid id ut accusantium et nihil. Veritatis voluptatem nesciunt et et. Totam numquam non quisquam sint qui voluptates.\n \r\tEaque dolor eligendi earum eligendi sit ut porro. Minus minima non rerum qui. Ullam omnis qui et dolor voluptate. Quisquam reprehenderit numquam autem. Voluptate autem veniam minus recusandae sunt.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/04.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/28.jpg"
+        }
+      ],
+      "UnparsedAddress": "445 Liberty St, San Francisco, CA 94114",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-30T07:30:51.568Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294e0",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1804,
+      "AssociationFee": 448,
+      "ListPrice": 883202,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 4758,
+      "YearBuilt": 2011,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 247,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Wood"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Dicta aspernatur recusandae culpa. Numquam sint officia sapiente. Molestiae eum temporibus cupiditate atque sapiente est. Quae sit delectus unde quia iste suscipit.\n \r\tAccusamus similique consequatur sed sit incidunt delectus iure maiores. Aliquam ad non rem aut aut. Omnis mollitia nemo repellendus ipsa quo autem velit consequatur. Quo distinctio tempore sint molestiae sit. Totam velit mollitia impedit earum aut minus.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 4,
+      "Media": [],
+      "UnparsedAddress": "198 Bridgeview Dr, San Francisco, CA 94124",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-05T13:50:12.898Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294d6",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 660,
+      "AssociationFee": 280,
+      "ListPrice": 864288,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 9775,
+      "YearBuilt": 1997,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 32,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Electric", "Wood", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Dolor perspiciatis voluptatem voluptates architecto voluptate quia. Nobis nihil sit ratione. Adipisci aspernatur est quisquam.\n \r\tVelit autem voluptates dolorum omnis atque. Deserunt aspernatur ratione ullam optio a corporis. Dicta perspiciatis qui dolores cumque vero sint accusantium tempore.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/18.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "Middle Dr W, San Francisco, CA 94121",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-08-08T10:35:11.964Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294f7",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1246,
+      "AssociationFee": 388,
+      "ListPrice": 305553,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 9570,
+      "YearBuilt": 1977,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 251,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Wood", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Molestiae nostrum expedita cumque cumque eveniet. Enim rerum qui in fuga qui. Eligendi iusto quasi cupiditate eum quo vel repudiandae sunt.\n \r\tQuis aliquam fuga illum aliquam. Occaecati aut hic quibusdam quaerat. Sint cumque deserunt sunt. Omnis nostrum voluptates perferendis enim voluptatem.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        }
+      ],
+      "UnparsedAddress": "1870 Egbert Ave, San Francisco, CA 94124",
+      "City": "Bayview",
+      "AvailabilityDate": "2018-07-02T15:30:05.581Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294ef",
+      "LotSizeAcres": 5,
+      "LotSizeSquareFeet": 1947,
+      "AssociationFee": 211,
+      "ListPrice": 421257,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 3,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 2768,
+      "YearBuilt": 1969,
+      "StandardStatus": "Active",
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 349,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Electric", "Forced Air"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Rem qui explicabo tempora magnam est. Officia fuga eveniet maiores accusantium aut. Temporibus et maxime voluptatem accusantium voluptas enim cumque sit. Quam quas molestias dolores. Voluptas sit rem qui minima.\n \r\tCorporis sed error in quas aperiam. Temporibus doloribus debitis eum enim debitis. Atque repudiandae quia sint sed.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/16.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/05.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/02.jpg"
+        }
+      ],
+      "UnparsedAddress": "350 Oshaughnessy Blvd, San Francisco, CA 94131",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-27T04:06:23.469Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294e9",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1929,
+      "AssociationFee": 33,
+      "ListPrice": 671748,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 8487,
+      "YearBuilt": 1992,
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 181,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": null,
+      "Heating": ["Heat Pump"],
+      "PoolPrivateYN": false,
+
+      "Disclaimer": "Magnam ipsa voluptates molestiae possimus soluta quam. Esse temporibus tempore illo eos perspiciatis nostrum laboriosam quo. Autem est explicabo reiciendis quia asperiores. Quia ut placeat dolores velit earum fugiat. Eos omnis eum voluptatem.\n \r\tQuae repudiandae inventore iusto nulla libero. Quia molestiae debitis necessitatibus reiciendis veritatis. Ipsam nulla sint ea. Sapiente illo ipsam autem omnis.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/24.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/23.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/06.jpg"
+        }
+      ],
+      "UnparsedAddress": "1251 Plymouth Ave, San Francisco, CA 94112",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-29T03:00:34.141Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b348294f7",
+      "LotSizeAcres": 6,
+      "LotSizeSquareFeet": 1246,
+      "AssociationFee": 388,
+      "ListPrice": 305553,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 2,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 9570,
+      "YearBuilt": 1977,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 251,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Wood", "Heat Pump"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Molestiae nostrum expedita cumque cumque eveniet. Enim rerum qui in fuga qui. Eligendi iusto quasi cupiditate eum quo vel repudiandae sunt.\n \r\tQuis aliquam fuga illum aliquam. Occaecati aut hic quibusdam quaerat. Sint cumque deserunt sunt. Omnis nostrum voluptates perferendis enim voluptatem.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 4,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/21.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/01.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/19.jpg"
+        }
+      ],
+      "UnparsedAddress": "1870 Egbert Ave, San Francisco, CA 94124",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-02T15:30:05.581Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482946e",
+      "LotSizeAcres": 7,
+      "LotSizeSquareFeet": 1471,
+      "AssociationFee": 227,
+      "ListPrice": 42855,
+      "BedroomsTotal": 2,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 7878,
+      "YearBuilt": 1984,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 349,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Wood"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Culpa vel ea eos. Facilis et nihil laboriosam sint. Aperiam libero tempora fugit. Accusamus dolorum unde distinctio. Quis et id voluptas nulla.\n \r\tQui quidem incidunt ea eum delectus modi. Eum aut sapiente asperiores dolor quas. Quia omnis molestiae harum eum voluptatem voluptatem.",
+      "SpecialListingConditions": ["Standard"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/29.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/03.jpg"
+        }
+      ],
+      "UnparsedAddress": "918 Alabama St, San Francisco, CA 94110",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-20T12:34:48.081Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829485",
+      "LotSizeAcres": 2,
+      "LotSizeSquareFeet": 1147,
+      "AssociationFee": 252,
+      "ListPrice": 755677,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 3,
+      "StoriesTotal": 3,
+      "LivingArea": 3992,
+      "YearBuilt": 1993,
+      "PropertySubType": "Apartment",
+      "DaysOnMarket": 67,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan", "Central Air"],
+      "Heating": ["Forced Air", "Electric"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Doloremque quae dolor dolores qui quaerat. Maiores sit aspernatur magni fugit dolores sunt vero animi. Repellendus dolor ut occaecati enim. Qui omnis ut eveniet delectus veritatis reiciendis nemo.\n \r\tCommodi repudiandae id voluptas soluta sint deserunt velit. Qui suscipit est facere neque vitae voluptatem esse. Quis voluptatem eaque praesentium qui maxime. Eaque aut vel alias.",
+      "SpecialListingConditions": ["Standard", "REO"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/34.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/07.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/22.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/25.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/31.jpg"
+        }
+      ],
+      "UnparsedAddress": "1510 35th Ave, San Francisco, CA 94122",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-05-29T03:13:13.236Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482948a",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 1373,
+      "AssociationFee": 340,
+      "ListPrice": 393186,
+      "BedroomsTotal": 3,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 2,
+      "StoriesTotal": 3,
+      "LivingArea": 6535,
+      "YearBuilt": 1993,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 155,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Forced Air", "Wood", "Electric"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Aut occaecati unde soluta sed temporibus facere eius temporibus. Esse eveniet quae autem officiis quos qui. Architecto et reprehenderit quia id voluptatem iste fuga eos. Totam consectetur alias magnam voluptatem accusantium eum.\n \r\tProvident molestiae odit recusandae nam facere accusamus optio. Veniam neque consequatur sit debitis. Quia ut eum numquam itaque error.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale", "Probate"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/32.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        }
+      ],
+      "UnparsedAddress": "85 Lomita Ave, San Francisco, CA 94122",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-15T20:28:35.650Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b3482944d",
+      "LotSizeAcres": 3,
+      "LotSizeSquareFeet": 892,
+      "AssociationFee": 371,
+      "ListPrice": 823463,
+      "BedroomsTotal": 1,
+      "GarageSpaces": 4,
+      "BathroomsHalf": 1,
+      "StoriesTotal": 3,
+      "LivingArea": 3051,
+      "YearBuilt": 1968,
+      "StandardStatus": "Active",
+      "PropertySubType": "Condominium",
+      "DaysOnMarket": 75,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": false,
+      "Cooling": null,
+      "Heating": ["Electric", "Heat Pump"],
+      "PoolPrivateYN": false,
+      "Disclaimer": "Commodi officia quaerat quibusdam eligendi libero. Et at odit nostrum inventore corrupti ab harum. Quis facere ipsum magnam repellat quibusdam non. Recusandae voluptatem delectus molestias sunt sed laborum.\n \r\tVeritatis qui doloremque non quibusdam. Et culpa voluptatem magnam nulla voluptatem repudiandae sunt. Vel quo necessitatibus repudiandae eum accusantium unde. Et commodi assumenda et laboriosam laboriosam. Est beatae voluptatem rerum ducimus unde quasi sint itaque.",
+      "SpecialListingConditions": [
+        "Standard",
+        "REO",
+        "Short Sale",
+        "Probate",
+        "Auction"
+      ],
+      "ParkingTotal": 2,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/11.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/09.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/30.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "58 Ocean Ave, San Francisco, CA 94112",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-07-06T03:45:11.054Z"
+    },
+    {
+      "ListingId": "5af601c4fc76173b34829491",
+      "LotSizeAcres": 4,
+      "LotSizeSquareFeet": 1829,
+      "AssociationFee": 191,
+      "ListPrice": 682155,
+      "BedroomsTotal": 4,
+      "GarageSpaces": 1,
+      "BathroomsHalf": 4,
+      "StoriesTotal": 3,
+      "LivingArea": 6903,
+      "YearBuilt": 2003,
+      "PropertySubType": "Single Family Residence",
+      "DaysOnMarket": 233,
+      "View": ["View", "Lake View"],
+      "WaterfrontYN": true,
+      "Cooling": ["Evaporative Cooler", "Ceiling Fan"],
+      "Heating": ["Forced Air", "Wood", "Boiler"],
+      "PoolPrivateYN": true,
+      "Disclaimer": "Qui officia totam omnis. Sunt iusto voluptatem blanditiis molestias sapiente. Quos necessitatibus aperiam explicabo perspiciatis. Inventore ut velit facere laborum ut quia.\n \r\tNecessitatibus quod quam omnis molestias neque. Omnis voluptas a molestiae provident molestiae veniam repudiandae. Voluptate magni quisquam voluptates quaerat velit et nam. Est deserunt voluptates aperiam dolor praesentium corrupti reiciendis.",
+      "SpecialListingConditions": ["Standard", "REO", "Short Sale"],
+      "ParkingTotal": 3,
+      "Media": [
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/12.jpg"
+        },
+        {
+          "MediaURL": "https://s3.amazonaws.com/retsly-importd-production/test_data/listings/33.jpg"
+        }
+      ],
+      "UnparsedAddress": "550 Moultrie St, San Francisco, CA 94110",
+      "City": "Potrero",
+      "AvailabilityDate": "2018-06-25T16:58:49.418Z"
+    }
+  ]
+}
